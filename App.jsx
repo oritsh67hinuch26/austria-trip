@@ -120,12 +120,12 @@ const days = [
   {
     day: 8, date: "29.5", weekday: "חמישי",
     theme: "יום נסיעות ארוך → פוסן", emoji: "🌉", color: "#5B4A8E",
-    morning: ["09:00 יציאה מאינסברוק", "10:00 נקיק Leutaschklamm", "גשרי פלדה תלויים מעל נהר גועש", "מסלול מעגלי ~שעה וחצי", "12:30 Mittenwald – עיירת הציורים", "Lüftlmalerei – כל הבתים מצוירים", "ארוחת צהריים בעיר העתיקה"],
-    afternoon: ["14:30 Highline 179 (ליד Reutte)", "גשר החבלים התלויים הארוכים בעולם", "מחבר בין שתי מצודות עתיקות", "עלייה במיני-פוניקולר"],
+    morning: ["09:00 יציאה מאינסברוק צפונה", "09:30 נקיק Leutaschklamm (30 דק' מאינסברוק)", "גשרי פלדה תלויים מעל נהר גועש", "מסלול מעגלי ~שעה וחצי", "11:30 Mittenwald – עיירת הציורים (15 דק')", "Lüftlmalerei – כל הבתים מצוירים", "ארוחת צהריים בעיר העתיקה"],
+    afternoon: ["14:00 Highline 179 ליד Reutte (40 דק' מ-Mittenwald)", "גשר החבלים התלויים הארוכים בעולם", "מחבר בין שתי מצודות עתיקות", "עלייה במיני-פוניקולר", "⚠️ תיקון נתיב: Leutasch → Mittenwald → Highline → פוסן (חוסך ~45 דק' נסיעה!)"],
     evening: ["17:00 הגעה לפוסן + צ'ק-אין", "שיטוט בעיר העתיקה", "ארוחת ערב בפוסן", "Hotel Sonne – לב העיר"],
     hotel: "Hotel Sonne – פוסן, לב האקשן", gf: "מאפיות ב-Reichenstraße",
-    distance: "אינסברוק←Leutasch: 30 ק\"מ | ←Mittenwald: 15 ק\"מ | ←Highline: 40 ק\"מ | ←פוסן: 30 ק\"מ",
-    tip: "בגשר יש פוניקולר לעלייה – לחסוך את ההליכה",
+    distance: "אינסברוק←Leutasch: 30 ק\"מ | ←Mittenwald: 15 ק\"מ | ←Highline: 40 ק\"מ | ←פוסן: 30 ק\"מ | סה\"כ ~115 ק\"מ",
+    tip: "הנתיב המתוקן: Leutasch → Mittenwald → Highline → פוסן – ישר קדימה, ללא חזרה אחורה!",
     stops: [
       { label: "🪨 נקיק Leutaschklamm", waze: "https://waze.com/ul?ll=47.3833,11.1333&navigate=yes" },
       { label: "🎨 Mittenwald – עיירת הציורים", waze: "https://waze.com/ul?ll=47.4433,11.2636&navigate=yes" },
