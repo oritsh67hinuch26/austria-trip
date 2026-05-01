@@ -1,0 +1,22 @@
+{
+  "name": "מסלול אוסטריה 🇦🇹",
+  "short_name": "אוסטריה",
+  "description": "מסלול טיול אוסטריה 10 ימים",
+  "start_url": "/austria-trip/",
+  "display": "standalone",
+  "background_color": "#1a1a2e",
+  "theme_color": "#5B8E7D",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
