@@ -313,6 +313,7 @@ function TripApp() {
     { key: "info", label: "ℹ️ פרטים" },
     { key: "gf", label: "🌾 GF" },
     { key: "nav", label: "🚗 ניווט" },
+    { key: "tickets", label: "🎫 כרטיסים" },
   ];
 
   return React.createElement("div", {
@@ -403,6 +404,68 @@ function TripApp() {
               React.createElement("span", { style: { fontSize: 16 } }, stop.label),
               React.createElement("span", { style: { fontSize: 22 } }, "📍")
             )
+          )
+        ),
+        tab === "tickets" && React.createElement("div", { style: { display: "flex", flexDirection: "column", gap: 12 } },
+          // טיסת הלוך - ימים 1
+          (day.day === 1) && React.createElement("div", null,
+            React.createElement("div", { style: { fontSize: 14, color: "#666", marginBottom: 8, fontWeight: 600 } }, "✈️ טיסת הלוך – 22/05"),
+            React.createElement("div", { style: { background: "#f8f8f8", borderRadius: 10, padding: 14, border: "1px solid #e0e0e0", marginBottom: 8 } },
+              React.createElement("div", { style: { fontSize: 15, fontWeight: 600, marginBottom: 4 } }, "AZ809 – ITA Airways"),
+              React.createElement("div", { style: { fontSize: 14, color: "#444" } }, "תל אביב (TLV) → רומא (FCO)"),
+              React.createElement("div", { style: { fontSize: 14, color: "#444" } }, "05:15 → 08:00 | טרמינל 3"),
+              React.createElement("div", { style: { fontSize: 13, color: "#888", marginTop: 4 } }, "המשך: LH1867 (Lufthansa) רומא → מינכן 10:50→12:25")
+            ),
+            React.createElement("div", { style: { background: "#444", borderRadius: 8, marginBottom: 4 } },
+              React.createElement("div", { style: { fontSize: 13, color: "#aaa", padding: "6px 12px" } }, "קוד הזמנה: 9YD8GG")
+            ),
+            React.createElement("a", {
+              href: "eTicket.pdf", target: "_blank",
+              style: { display: "flex", alignItems: "center", justifyContent: "space-between", background: "#5B8E7D22", border: "1px solid #5B8E7D", borderRadius: 10, padding: "12px 16px", textDecoration: "none", color: "#222" }
+            },
+              React.createElement("span", { style: { fontSize: 16 } }, "📄 פתח כרטיס טיסה הלוך"),
+              React.createElement("span", { style: { fontSize: 20 } }, "↗️")
+            )
+          ),
+          // טיסת חזור - יום 10
+          (day.day === 10) && React.createElement("div", null,
+            React.createElement("div", { style: { fontSize: 14, color: "#666", marginBottom: 8, fontWeight: 600 } }, "✈️ טיסת חזור – 31/05"),
+            React.createElement("div", { style: { background: "#f8f8f8", borderRadius: 10, padding: 14, border: "1px solid #e0e0e0", marginBottom: 8 } },
+              React.createElement("div", { style: { fontSize: 15, fontWeight: 600, marginBottom: 4 } }, "LY352 – אל על"),
+              React.createElement("div", { style: { fontSize: 14, color: "#444" } }, "מינכן (MUC) → תל אביב (TLV)"),
+              React.createElement("div", { style: { fontSize: 14, color: "#444" } }, "20:00 → 00:45 (+1) | טרמינל 1")
+            ),
+            React.createElement("div", { style: { background: "#444", borderRadius: 8, marginBottom: 4 } },
+              React.createElement("div", { style: { fontSize: 13, color: "#aaa", padding: "6px 12px" } }, "קוד הזמנה: 9YCM2S")
+            ),
+            React.createElement("a", {
+              href: "ticket2.pdf", target: "_blank",
+              style: { display: "flex", alignItems: "center", justifyContent: "space-between", background: "#5B8E7D22", border: "1px solid #5B8E7D", borderRadius: 10, padding: "12px 16px", textDecoration: "none", color: "#222" }
+            },
+              React.createElement("span", { style: { fontSize: 16 } }, "📄 פתח כרטיס טיסה חזור"),
+              React.createElement("span", { style: { fontSize: 20 } }, "↗️")
+            )
+          ),
+          // כרטיס טירה - יום 9
+          (day.day === 9) && React.createElement("div", null,
+            React.createElement("div", { style: { fontSize: 14, color: "#666", marginBottom: 8, fontWeight: 600 } }, "🏰 כרטיס טירת Neuschwanstein – 30/05"),
+            React.createElement("div", { style: { background: "#f8f8f8", borderRadius: 10, padding: 14, border: "1px solid #e0e0e0", marginBottom: 8 } },
+              React.createElement("div", { style: { fontSize: 15, fontWeight: 600, marginBottom: 4 } }, "Neuschwanstein Castle"),
+              React.createElement("div", { style: { fontSize: 14, color: "#444" } }, "תאריך: 30.05.2026"),
+              React.createElement("div", { style: { fontSize: 14, color: "#444" } }, "מספר סיור: 422"),
+              React.createElement("div", { style: { fontSize: 13, color: "#e74c3c", marginTop: 6, fontWeight: 600 } }, "⚠️ להגיע 15 דק' לפני הסיור!")
+            ),
+            React.createElement("a", {
+              href: "Ticket_20260420_5401729_1327067.pdf", target: "_blank",
+              style: { display: "flex", alignItems: "center", justifyContent: "space-between", background: "#4A8E6B22", border: "1px solid #4A8E6B", borderRadius: 10, padding: "12px 16px", textDecoration: "none", color: "#222" }
+            },
+              React.createElement("span", { style: { fontSize: 16 } }, "📄 פתח כרטיס טירה"),
+              React.createElement("span", { style: { fontSize: 20 } }, "↗️")
+            )
+          ),
+          // ימים ללא כרטיסים
+          (day.day !== 1 && day.day !== 9 && day.day !== 10) && React.createElement("div", { style: { textAlign: "center", padding: 20, color: "#999", fontSize: 15 } },
+            "אין כרטיסים ליום זה 😊"
           )
         )
       ),
