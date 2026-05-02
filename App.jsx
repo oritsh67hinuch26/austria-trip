@@ -316,9 +316,9 @@ function TripApp() {
   ];
 
   return React.createElement("div", {
-    style: { minHeight: "100vh", background: "linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)", fontFamily: "'Georgia', serif", direction: "rtl", color: "#e8e0d0" }
+    style: { minHeight: "100vh", background: "linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #2c3e50 100%)", fontFamily: "'Georgia', serif", direction: "rtl", color: "#e8e0d0" }
   },
-    React.createElement("div", { style: { background: "rgba(255,255,255,0.03)", borderBottom: "1px solid rgba(255,255,255,0.08)", padding: "24px 20px 20px", textAlign: "center" } },
+    React.createElement("div", { style: { background: "rgba(255,255,255,0.08)", borderBottom: "1px solid rgba(255,255,255,0.08)", padding: "24px 20px 20px", textAlign: "center" } },
       React.createElement("div", { style: { fontSize: 16, letterSpacing: 4, color: "#8E9B7D", marginBottom: 6 } }, "22–31 מאי 2025"),
       React.createElement("h1", { style: { margin: 0, fontSize: 34, fontWeight: 400, background: "linear-gradient(135deg, #d4c5a9, #8ecfba)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" } }, "🇦🇹 מסלול אוסטריה"),
       React.createElement("div", { style: { fontSize: 16, color: "#7a8a6a", marginTop: 4 } }, "10 ימים | עיירות, טבע, אוכל מקומי | GF ✓")
@@ -327,20 +327,20 @@ function TripApp() {
       React.createElement("div", { style: { display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: 10 } },
         days.map((d, i) => React.createElement("button", {
           key: i, onClick: () => { setSelectedDay(i); setTab("morning"); },
-          style: { background: selectedDay === i ? "linear-gradient(135deg, " + d.color + "dd, " + d.color + "88)" : "rgba(255,255,255,0.04)", border: selectedDay === i ? "1px solid " + d.color : "1px solid rgba(255,255,255,0.08)", borderRadius: 12, padding: "14px 12px", cursor: "pointer", textAlign: "right", color: "#e8e0d0" }
+          style: { background: selectedDay === i ? "linear-gradient(135deg, " + d.color + "dd, " + d.color + "88)" : "rgba(255,255,255,0.1)", border: selectedDay === i ? "1px solid " + d.color : "1px solid rgba(255,255,255,0.08)", borderRadius: 12, padding: "14px 12px", cursor: "pointer", textAlign: "right", color: "#e8e0d0" }
         },
           React.createElement("div", { style: { display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 6 } },
             React.createElement("span", { style: { fontSize: 22 } }, d.emoji),
             React.createElement("div", null,
-              React.createElement("div", { style: { fontSize: 14, color: "#8a9a7a", marginBottom: 2 } }, d.weekday + " " + d.date),
-              React.createElement("div", { style: { fontSize: 14, fontWeight: 600, color: "#b8c5a8" } }, "יום " + d.day)
+              React.createElement("div", { style: { fontSize: 16, color: "#aabba8", marginBottom: 2 } }, d.weekday + " " + d.date),
+              React.createElement("div", { style: { fontSize: 16, fontWeight: 600, color: "#e0eed8" } }, "יום " + d.day)
             )
           ),
-          React.createElement("div", { style: { fontSize: 14, lineHeight: 1.5, color: selectedDay === i ? "#fff" : "#c8bfa8" } }, d.theme)
+          React.createElement("div", { style: { fontSize: 15, lineHeight: 1.5, color: selectedDay === i ? "#fff" : "#ddd" } }, d.theme)
         ))
       )
     ),
-    day && React.createElement("div", { style: { margin: "0 16px 32px", background: "rgba(255,255,255,0.04)", borderRadius: 16, border: "1px solid " + day.color + "44", overflow: "hidden" } },
+    day && React.createElement("div", { style: { margin: "0 16px 32px", background: "rgba(255,255,255,0.1)", borderRadius: 16, border: "1px solid " + day.color + "44", overflow: "hidden" } },
       React.createElement("div", { style: { background: "linear-gradient(135deg, " + day.color + "cc, " + day.color + "66)", padding: "16px 20px", display: "flex", justifyContent: "space-between", alignItems: "center" } },
         React.createElement("span", { style: { fontSize: 34 } }, day.emoji),
         React.createElement("div", { style: { textAlign: "right" } },
@@ -351,28 +351,28 @@ function TripApp() {
       React.createElement("div", { style: { display: "flex", borderBottom: "1px solid rgba(255,255,255,0.08)", overflowX: "auto" } },
         tabList.map(t => React.createElement("button", {
           key: t.key, onClick: () => setTab(t.key),
-          style: { flex: 1, padding: "12px 4px", border: "none", background: tab === t.key ? day.color + "44" : "transparent", color: tab === t.key ? "#fff" : "#8a9a7a", fontSize: 12, cursor: "pointer", borderBottom: tab === t.key ? "2px solid " + day.color : "2px solid transparent", whiteSpace: "nowrap", minWidth: 60 }
+          style: { flex: 1, padding: "12px 4px", border: "none", background: tab === t.key ? day.color + "44" : "transparent", color: tab === t.key ? "#fff" : "#8a9a7a", fontSize: 13, cursor: "pointer", borderBottom: tab === t.key ? "2px solid " + day.color : "2px solid transparent", whiteSpace: "nowrap", minWidth: 60 }
         }, t.label))
       ),
       React.createElement("div", { style: { padding: "16px 20px" } },
         (tab === "morning" || tab === "afternoon" || tab === "evening") && React.createElement("ul", { style: { margin: 0, padding: 0, listStyle: "none" } },
           (tab === "morning" ? day.morning : tab === "afternoon" ? day.afternoon : day.evening).map((item, i) =>
-            React.createElement("li", { key: i, style: { padding: "8px 0", borderBottom: "1px solid rgba(255,255,255,0.06)", fontSize: 16, lineHeight: 1.5, display: "flex", alignItems: "flex-start", gap: 10 } },
+            React.createElement("li", { key: i, style: { padding: "8px 0", borderBottom: "1px solid rgba(255,255,255,0.06)", fontSize: 18, lineHeight: 1.6, display: "flex", alignItems: "flex-start", gap: 10 } },
               React.createElement("span", { style: { color: day.color, flexShrink: 0, marginTop: 3, fontSize: 10 } }, "◆"),
               React.createElement("span", null, item)
             )
           )
         ),
         tab === "info" && React.createElement("div", { style: { display: "flex", flexDirection: "column", gap: 12 } },
-          React.createElement("div", { style: { background: "rgba(255,255,255,0.04)", borderRadius: 10, padding: 14, border: "1px solid " + day.color + "33" } },
+          React.createElement("div", { style: { background: "rgba(255,255,255,0.1)", borderRadius: 10, padding: 14, border: "1px solid " + day.color + "33" } },
             React.createElement("div", { style: { fontSize: 14, color: day.color, marginBottom: 6 } }, "🏨 מלון"),
             React.createElement("div", { style: { fontSize: 17 } }, day.hotel)
           ),
-          React.createElement("div", { style: { background: "rgba(255,255,255,0.04)", borderRadius: 10, padding: 14, border: "1px solid rgba(255,255,255,0.08)" } },
+          React.createElement("div", { style: { background: "rgba(255,255,255,0.1)", borderRadius: 10, padding: 14, border: "1px solid rgba(255,255,255,0.08)" } },
             React.createElement("div", { style: { fontSize: 14, color: "#8E7D4A", marginBottom: 6 } }, "🚗 נסיעות"),
             React.createElement("div", { style: { fontSize: 16, lineHeight: 1.6 } }, day.distance)
           ),
-          React.createElement("div", { style: { background: "rgba(255,255,255,0.04)", borderRadius: 10, padding: 14, border: "1px solid rgba(255,255,255,0.08)" } },
+          React.createElement("div", { style: { background: "rgba(255,255,255,0.1)", borderRadius: 10, padding: 14, border: "1px solid rgba(255,255,255,0.08)" } },
             React.createElement("div", { style: { fontSize: 14, color: "#6B8E4A", marginBottom: 6 } }, "🌾 GF"),
             React.createElement("div", { style: { fontSize: 16 } }, day.gf)
           ),
