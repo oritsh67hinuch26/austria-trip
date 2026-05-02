@@ -10,6 +10,10 @@ const days = [
     hotel: "Motel One Salzburg-Süd", gf: "Triangel, Carpe Diem",
     distance: "מינכן←זלצבורג: 145 ק\"מ | 1.5 שעות",
     tip: "לרכוש מדבקת כבישים (Vignette) לאוסטריה בתחנת דלק לפני הגבול",
+    gfPlaces: [
+      { label: "🌿 Triangel Restaurant", waze: "https://waze.com/ul?ll=47.7998,13.0455&navigate=yes" },
+      { label: "🥂 Carpe Diem Finest Fingerfood", waze: "https://waze.com/ul?ll=47.8008,13.0432&navigate=yes" },
+    ],
     stops: [
       { label: "✈️ שדה תעופה מינכן", waze: "https://waze.com/ul?ll=48.3537,11.7750&navigate=yes" },
       { label: "🏔️ קייזרטל", waze: "https://waze.com/ul?ll=47.5747,12.1897&navigate=yes" },
@@ -27,6 +31,10 @@ const days = [
     hotel: "Frauenzimmer by Townhouse – אבנטאו", gf: "Bräugasthof, Golling",
     distance: "זלצבורג←Salzachöfen: 40 ק\"מ | ←Gosausee: 25 ק\"מ | ←אבנטאו: 20 ק\"מ",
     tip: "אין הלשטאט – פחות תיירותי, יותר יפה!",
+    gfPlaces: [
+      { label: "🌿 Bräugasthof Abtenau", waze: "https://waze.com/ul?ll=47.5688,13.3453&navigate=yes" },
+      { label: "🍽️ Gasthof Zur Post, Golling", waze: "https://waze.com/ul?ll=47.5964,13.1650&navigate=yes" },
+    ],
     stops: [
       { label: "🏘️ הלשטאט", waze: "https://waze.com/ul?ll=47.5622,13.6493&navigate=yes" },
       { label: "🪨 נקיק Salzachöfen", waze: "https://waze.com/ul?ll=47.5897,13.1714&navigate=yes" },
@@ -44,6 +52,10 @@ const days = [
     hotel: "Aparthotel Zell am See – נוף לאגם", gf: "Kupferkanne, Zell am See",
     distance: "אבנטאו←Hohenwerfen: 20 ק\"מ | ←Zell am See: 30 ק\"מ",
     tip: "מופע הבזים ב-11:15 – זמן מושלם!",
+    gfPlaces: [
+      { label: "☕ Kupferkanne Zell am See", waze: "https://waze.com/ul?ll=47.3244,12.7940&navigate=yes" },
+      { label: "🌿 Restaurant Steinerwirt, Zell am See", waze: "https://waze.com/ul?ll=47.3260,12.7950&navigate=yes" },
+    ],
     stops: [
       { label: "🏰 טירת Hohenwerfen", waze: "https://waze.com/ul?ll=47.4618,13.1872&navigate=yes" },
       { label: "💧 נקיק זיגמונד-טון", waze: "https://waze.com/ul?ll=47.3747,13.1253&navigate=yes" },
@@ -60,6 +72,10 @@ const days = [
     hotel: "Aparthotel Zell am See", gf: "להצטייד בחטיפי GF מהמלון",
     distance: "Zell am See←סכר: 10 ק\"מ | ←גרוסגלוקנר: 15 ק\"מ | דרך פנורמית: 48 ק\"מ",
     tip: "לבדוק www.grossglockner.at לפני היציאה",
+    gfPlaces: [
+      { label: "🌿 Fürthermoaralm (בדרך הפנורמית)", waze: "https://waze.com/ul?ll=47.0800,12.7800&navigate=yes" },
+      { label: "☕ חזרה ל-Kupferkanne, Zell am See", waze: "https://waze.com/ul?ll=47.3244,12.7940&navigate=yes" },
+    ],
     stops: [
       { label: "💧 סכר Kaprun", waze: "https://waze.com/ul?ll=47.2667,12.7597&navigate=yes" },
       { label: "⛰️ כניסת גרוסגלוקנר", waze: "https://waze.com/ul?ll=47.1167,12.8417&navigate=yes" },
@@ -77,6 +93,10 @@ const days = [
     hotel: "Boutiquehotel Rattenberg – בניין גותי מ-1500, דירוג 9.6", gf: "ברברה מגישה ארוחת בוקר אזורית בעצמה",
     distance: "Zell am See←Krimml: 35 ק\"מ | ←Gerlos: 45 ק\"מ | ←Rattenberg: 70 ק\"מ",
     tip: "חלופת גשם: מכרות הכסף Silver Mine ב-Schwaz",
+    gfPlaces: [
+      { label: "🌿 Café Antik, Rattenberg", waze: "https://waze.com/ul?ll=47.4397,11.8942&navigate=yes" },
+      { label: "🍽️ Gasthof Zollhaus, Rattenberg", waze: "https://waze.com/ul?ll=47.4400,11.8950&navigate=yes" },
+    ],
     stops: [
       { label: "💧 מפלי Krimml", waze: "https://waze.com/ul?ll=47.2167,12.1700&navigate=yes" },
       { label: "🏔️ Gerlos Pass", waze: "https://waze.com/ul?ll=47.2383,12.0383&navigate=yes" },
@@ -94,6 +114,10 @@ const days = [
     hotel: "Seehotel Einwaller, Pertisau – מזח פרטי, ספא גג, מבוגרים בלבד", gf: "Sennereiküche במחלבה",
     distance: "Rattenberg←Stans: 30 ק\"מ | ←Mayrhofen: 25 ק\"מ | ←Achensee: 45 ק\"מ",
     tip: "חלופת גשם: עולם הקריסטלים של סברובסקי",
+    gfPlaces: [
+      { label: "🧀 Sennereiküche (במחלבה עצמה)", waze: "https://waze.com/ul?ll=47.1667,11.8667&navigate=yes" },
+      { label: "🌿 Seehotel Einwaller (המלון)", waze: "https://waze.com/ul?q=Seehotel+Einwaller+Pertisau&navigate=yes" },
+    ],
     stops: [
       { label: "🪨 נקיק Wolfsklamm (Stans)", waze: "https://waze.com/ul?ll=47.4172,11.7797&navigate=yes" },
       { label: "🧀 מחלבת Sennerei Zillertal", waze: "https://waze.com/ul?ll=47.1667,11.8667&navigate=yes" },
@@ -110,6 +134,11 @@ const days = [
     hotel: "Altstadthotel Weisses Kreuz – אינסברוק", gf: "Lichtblick (קומה 7), עוגות – Café Munding",
     distance: "Pertisau←Hall: 50 ק\"מ | ←אינסברוק: 10 ק\"מ",
     tip: "חלופה: עולם הקריסטלים של סברובסקי (20 דק')",
+    gfPlaces: [
+      { label: "🌿 Lichtblick Restaurant (קומה 7)", waze: "https://waze.com/ul?ll=47.2682,11.3928&navigate=yes" },
+      { label: "☕ Café Munding (עוגות GF)", waze: "https://waze.com/ul?ll=47.2675,11.3933&navigate=yes" },
+      { label: "🍽️ Restaurant Ottoburg, Innsbruck", waze: "https://waze.com/ul?ll=47.2678,11.3930&navigate=yes" },
+    ],
     stops: [
       { label: "🏘️ Hall in Tirol", waze: "https://waze.com/ul?ll=47.2833,11.5069&navigate=yes" },
       { label: "✨ הגג הזהב – אינסברוק", waze: "https://waze.com/ul?ll=47.2682,11.3928&navigate=yes" },
@@ -126,6 +155,10 @@ const days = [
     hotel: "Hotel Sonne – פוסן, לב האקשן", gf: "מאפיות ב-Reichenstraße",
     distance: "אינסברוק←Leutasch: 30 ק\"מ | ←Mittenwald: 15 ק\"מ | ←Highline: 40 ק\"מ | ←פוסן: 30 ק\"מ | סה\"כ ~115 ק\"מ",
     tip: "הנתיב המתוקן: Leutasch → Mittenwald → Highline → פוסן – ישר קדימה, ללא חזרה אחורה!",
+    gfPlaces: [
+      { label: "🌿 Gasthof zum Stern, Mittenwald", waze: "https://waze.com/ul?ll=47.4433,11.2636&navigate=yes" },
+      { label: "🍽️ Restaurant Ritterstube, Füssen", waze: "https://waze.com/ul?ll=47.5714,10.7014&navigate=yes" },
+    ],
     stops: [
       { label: "🪨 נקיק Leutaschklamm", waze: "https://waze.com/ul?ll=47.3833,11.1333&navigate=yes" },
       { label: "🎨 Mittenwald – עיירת הציורים", waze: "https://waze.com/ul?ll=47.4433,11.2636&navigate=yes" },
@@ -143,6 +176,10 @@ const days = [
     hotel: "Hotel Müller, Schwangau – משפחתי, בין שתי הטירות", gf: "מאפיות ב-Reichenstraße",
     distance: "פוסן←Neuschwanstein: 5 ק\"מ | ←Wies: 30 ק\"מ | ←Schwangau: 15 ק\"מ",
     tip: "הטירות המוארות בערב – קסומות ללא עומס תיירים",
+    gfPlaces: [
+      { label: "🏨 Hotel Müller (ארוחת ערב GF)", waze: "https://waze.com/ul?q=Hotel+Müller+Schwangau&navigate=yes" },
+      { label: "🌿 Alpenrose Restaurant, Schwangau", waze: "https://waze.com/ul?ll=47.5580,10.7550&navigate=yes" },
+    ],
     stops: [
       { label: "🏯 חניון Neuschwanstein", waze: "https://waze.com/ul?ll=47.5576,10.7498&navigate=yes" },
       { label: "🌊 אגם Alpsee", waze: "https://waze.com/ul?ll=47.5522,10.7467&navigate=yes" },
@@ -159,6 +196,10 @@ const days = [
     hotel: "טיסה הביתה", gf: "שדה תעופה Terminal 2T",
     distance: "Schwangau←Plansee: 25 ק\"מ | ←Linderhof: 20 ק\"מ | ←Oberammergau: 10 ק\"מ | ←מינכן: 90 ק\"מ",
     tip: "עצירה ב-Starnberg ממש על האוטוסטרדה בדרך לשדה",
+    gfPlaces: [
+      { label: "☕ Café Hochleitner, Oberammergau", waze: "https://waze.com/ul?ll=47.5983,11.0669&navigate=yes" },
+      { label: "✈️ Terminal 2T – שדה מינכן (GF)", waze: "https://waze.com/ul?ll=48.3537,11.7750&navigate=yes" },
+    ],
     stops: [
       { label: "🌊 אגם Plansee", waze: "https://waze.com/ul?ll=47.5000,10.7333&navigate=yes" },
       { label: "👑 ארמון Linderhof", waze: "https://waze.com/ul?ll=47.5714,10.9611&navigate=yes" },
@@ -180,6 +221,7 @@ function TripApp() {
     { key: "afternoon", label: "☀️ אחה\"צ" },
     { key: "evening", label: "🌙 ערב" },
     { key: "info", label: "ℹ️ פרטים" },
+    { key: "gf", label: "🌾 GF" },
     { key: "nav", label: "🚗 ניווט" },
   ];
 
@@ -216,10 +258,10 @@ function TripApp() {
           React.createElement("div", { style: { fontSize: 18, fontWeight: 600, color: "#fff" } }, day.theme)
         )
       ),
-      React.createElement("div", { style: { display: "flex", borderBottom: "1px solid rgba(255,255,255,0.08)" } },
+      React.createElement("div", { style: { display: "flex", borderBottom: "1px solid rgba(255,255,255,0.08)", overflowX: "auto" } },
         tabList.map(t => React.createElement("button", {
           key: t.key, onClick: () => setTab(t.key),
-          style: { flex: 1, padding: "12px 4px", border: "none", background: tab === t.key ? day.color + "44" : "transparent", color: tab === t.key ? "#fff" : "#8a9a7a", fontSize: 13, cursor: "pointer", borderBottom: tab === t.key ? "2px solid " + day.color : "2px solid transparent" }
+          style: { flex: 1, padding: "12px 4px", border: "none", background: tab === t.key ? day.color + "44" : "transparent", color: tab === t.key ? "#fff" : "#8a9a7a", fontSize: 12, cursor: "pointer", borderBottom: tab === t.key ? "2px solid " + day.color : "2px solid transparent", whiteSpace: "nowrap", minWidth: 60 }
         }, t.label))
       ),
       React.createElement("div", { style: { padding: "16px 20px" } },
@@ -249,15 +291,27 @@ function TripApp() {
             React.createElement("div", { style: { fontSize: 16, lineHeight: 1.6 } }, day.tip)
           )
         ),
+        tab === "gf" && React.createElement("div", { style: { display: "flex", flexDirection: "column", gap: 10 } },
+          React.createElement("div", { style: { fontSize: 14, color: "#8a9a7a", marginBottom: 4, textAlign: "center" } }, "לחצי לפתיחת Waze למסעדה 🌾"),
+          day.gfPlaces.map((place, i) =>
+            React.createElement("a", {
+              key: i, href: place.waze, target: "_blank", rel: "noopener noreferrer",
+              style: { display: "flex", alignItems: "center", justifyContent: "space-between", background: "#6B8E4A22", border: "1px solid #6B8E4A55", borderRadius: 10, padding: "14px 16px", textDecoration: "none", color: "#e8e0d0", cursor: "pointer" }
+            },
+              React.createElement("span", { style: { fontSize: 16 } }, place.label),
+              React.createElement("span", { style: { fontSize: 22 } }, "📍")
+            )
+          )
+        ),
         tab === "nav" && React.createElement("div", { style: { display: "flex", flexDirection: "column", gap: 10 } },
-          React.createElement("div", { style: { fontSize: 15, color: "#8a9a7a", marginBottom: 4, textAlign: "center" } }, "לחצי על עצירה לפתיחת Waze 🚗"),
+          React.createElement("div", { style: { fontSize: 14, color: "#8a9a7a", marginBottom: 4, textAlign: "center" } }, "לחצי על עצירה לפתיחת Waze 🚗"),
           day.stops.map((stop, i) =>
             React.createElement("a", {
               key: i, href: stop.waze, target: "_blank", rel: "noopener noreferrer",
               style: { display: "flex", alignItems: "center", justifyContent: "space-between", background: day.color + "22", border: "1px solid " + day.color + "55", borderRadius: 10, padding: "14px 16px", textDecoration: "none", color: "#e8e0d0", cursor: "pointer" }
             },
-              React.createElement("span", { style: { fontSize: 17 } }, stop.label),
-              React.createElement("span", { style: { fontSize: 24 } }, "📍")
+              React.createElement("span", { style: { fontSize: 16 } }, stop.label),
+              React.createElement("span", { style: { fontSize: 22 } }, "📍")
             )
           )
         )
