@@ -327,7 +327,7 @@ function TripApp() {
       React.createElement("div", { style: { display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: 10 } },
         days.map((d, i) => React.createElement("button", {
           key: i, onClick: () => { setSelectedDay(i); setTab("morning"); },
-          style: { background: selectedDay === i ? "linear-gradient(135deg, " + d.color + "dd, " + d.color + "88)" : "rgba(255,255,255,0.1)", border: selectedDay === i ? "2px solid " + d.color : "1px solid #e0e0e0", borderRadius: 12, padding: "14px 12px", cursor: "pointer", textAlign: "right", color: "#2c2c2c" }
+          style: { background: selectedDay === i ? "linear-gradient(135deg, " + d.color + "dd, " + d.color + "88)" : "#ffffff", border: selectedDay === i ? "2px solid " + d.color : "1px solid #e0e0e0", borderRadius: 12, padding: "14px 12px", cursor: "pointer", textAlign: "right", color: "#2c2c2c" }
         },
           React.createElement("div", { style: { display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 6 } },
             React.createElement("span", { style: { fontSize: 22 } }, d.emoji),
