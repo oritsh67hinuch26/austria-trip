@@ -386,7 +386,7 @@ function TripApp() {
           day.gfPlaces.map((place, i) =>
             React.createElement("a", {
               key: i, href: place.waze, target: "_blank", rel: "noopener noreferrer",
-              style: { display: "flex", alignItems: "center", justifyContent: "space-between", background: "#6B8E4A22", border: "1px solid #6B8E4A55", borderRadius: 10, padding: "14px 16px", textDecoration: "none", color: "#e8e0d0", cursor: "pointer" }
+              style: { display: "flex", alignItems: "center", justifyContent: "space-between", background: "#6B8E4A22", border: "1px solid #6B8E4A55", borderRadius: 10, padding: "14px 16px", textDecoration: "none", color: "#222", cursor: "pointer" }
             },
               React.createElement("span", { style: { fontSize: 16 } }, place.label),
               React.createElement("span", { style: { fontSize: 22 } }, "📍")
@@ -398,7 +398,7 @@ function TripApp() {
           day.stops.map((stop, i) =>
             React.createElement("a", {
               key: i, href: stop.waze, target: "_blank", rel: "noopener noreferrer",
-              style: { display: "flex", alignItems: "center", justifyContent: "space-between", background: day.color + "22", border: "1px solid " + day.color + "55", borderRadius: 10, padding: "14px 16px", textDecoration: "none", color: "#e8e0d0", cursor: "pointer" }
+              style: { display: "flex", alignItems: "center", justifyContent: "space-between", background: day.color + "22", border: "1px solid " + day.color + "55", borderRadius: 10, padding: "14px 16px", textDecoration: "none", color: "#222", cursor: "pointer" }
             },
               React.createElement("span", { style: { fontSize: 16 } }, stop.label),
               React.createElement("span", { style: { fontSize: 22 } }, "📍")
