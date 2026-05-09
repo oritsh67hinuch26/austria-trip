@@ -37,7 +37,8 @@ const days = [
       "11:30 Golling – ארוחת צהריים בגשטהוף מקומי"
     ],
     afternoon: [
-      "14:00 אגם Gosausee – הליכה לאורך הגדה הימנית עד סוף האגם הראשון, קרחון Dachstein משתקף במים"
+      "14:00 אגם Gosausee – הליכה לאורך הגדה הימנית עד סוף האגם הראשון, קרחון Dachstein משתקף במים",
+      "💡 אופציה נוספת: מכרות המלח של הלשטאט (Salzwelten) – מהמרהיבים בעולם, ממש באזור! אם יש אנרגיה אחרי הנקיק שווה מאוד"
     ],
     evening: [
       "17:30 נסיעה לאבנטאו (20 דק') + ארוחת ערב שקטה",
@@ -224,7 +225,7 @@ const days = [
     ],
     hotel: "Hotel Sonne – פוסן, לב האקשן", gf: "מאפיות ב-Reichenstraße",
     distance: "אינסברוק←Leutasch: 30 ק\"מ | ←Mittenwald: 15 ק\"מ | ←Highline: 40 ק\"מ | ←פוסן: 30 ק\"מ | סה\"כ ~115 ק\"מ",
-    tip: "נתיב יעיל: Leutasch → Mittenwald → Highline → פוסן – ישר קדימה!",
+    tip: "נתיב יעיל: Leutasch → Mittenwald → Highline → פוסן – ישר קדימה! | 💡 אם עייפים – אפשר לדלג על Mittenwald ולהגיע ישר ל-Highline",
     gfPlaces: [
       { label: "🌿 Gasthof zum Stern, Mittenwald", waze: "https://waze.com/ul?ll=47.4433,11.2636&navigate=yes" },
       { label: "🍽️ Restaurant Ritterstube, Füssen", waze: "https://waze.com/ul?ll=47.5714,10.7014&navigate=yes" },
@@ -285,7 +286,7 @@ const days = [
     ],
     hotel: "טיסה הביתה", gf: "שדה תעופה Terminal 2T",
     distance: "Schwangau←Plansee: 25 ק\"מ | ←Linderhof: 20 ק\"מ | ←Oberammergau: 10 ק\"מ | ←מינכן: 90 ק\"מ",
-    tip: "Starnberg ממש על האוטוסטרדה – עצירה קלה בדרך לשדה",
+    tip: "Starnberg ממש על האוטוסטרדה – עצירה קלה בדרך לשדה | 💡 אם לחוצים בזמן – Oberammergau הראשון לוויתור, ישירות לשדה",
     gfPlaces: [
       { label: "☕ Café Hochleitner, Oberammergau", waze: "https://waze.com/ul?ll=47.5983,11.0669&navigate=yes" },
       { label: "✈️ Terminal 2T – שדה מינכן (GF)", waze: "https://waze.com/ul?ll=48.3537,11.7750&navigate=yes" },
