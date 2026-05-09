@@ -46,7 +46,7 @@ const days = [
     ],
     hotel: "Frauenzimmer by Townhouse – אבנטאו", gf: "Bräugasthof, Golling",
     distance: "זלצבורג←Salzachöfen: 40 ק\"מ | ←Gosausee: 25 ק\"מ | ←אבנטאו: 20 ק\"מ",
-    tip: "גוסאו > הלשטאט – פחות תיירותי, יותר יפה!",
+    tip: "גוסאו > הלשטאט – פחות תיירותי, יותר יפה! | 💡 שווה להוסיף: מכרות המלח של הלשטאט (Salzwelten) – העתיקים בעולם, מגלשות עץ ענקיות, אגם תת-קרקעי. כ-35 יורו לאדם, להזמין מראש ב-salzwelten.at",
     gfPlaces: [
       { label: "🌿 Bräugasthof Abtenau", waze: "https://waze.com/ul?ll=47.5688,13.3453&navigate=yes" },
       { label: "🍽️ Gasthof Zur Post, Golling", waze: "https://waze.com/ul?ll=47.5964,13.1650&navigate=yes" },
