@@ -9,13 +9,13 @@ const days = [
       "קייזרטל (45 דק' מהנמל) – עמק ללא מכוניות: 280 מדרגות Kaiseraufstieg, כנסיית Antonius הפוטוגנית, בתי קפה כפריים מקומיים"
     ],
     afternoon: [
-      "16:00 זלצבורג – Getreidegasse, קתדרלה וכיכר Residenzplatz, גני Mirabell, גשר המנעולים Makartsteg",
-      "שקיעה מ-Kapuzinerberg – נוף על העיר"
+      "16:30 זלצבורג (30 דק' מקייזרטל) – Getreidegasse, כיכר Residenzplatz, גני Mirabell",
+      "18:30 נסיעה ל-St. Wolfgang על אגם Wolfgangsee (30 דק')"
     ],
-    evening: ["ארוחת ערב בעיר העתיקה", "לינה: Motel One Salzburg-Süd"],
-    hotel: "Motel One Salzburg-Süd", gf: "Triangel, Carpe Diem",
-    distance: "מינכן←זלצבורג: 145 ק\"מ | 1.5 שעות",
-    tip: "לרכוש מדבקת כבישים (Vignette) לאוסטריה בתחנת דלק לפני הגבול",
+    evening: ["ארוחת ערב שקטה בכפר עם נוף לאגם", "לינה: Strandhotel Margaretha, St. Wolfgang"],
+    hotel: "Strandhotel Margaretha – St. Wolfgang, אגם Wolfgangsee", gf: "Triangel, Carpe Diem (זלצבורג)",
+    distance: "מינכן←קייזרטל: 90 ק\"מ | ←זלצבורג: 45 ק\"מ | ←St. Wolfgang: 30 ק\"מ | סה\"כ ~165 ק\"מ",
+    tip: "לרכוש מדבקת כבישים (Vignette) לאוסטריה בתחנת דלק לפני הגבול | St. Wolfgang – כפר קסום על אגם Wolfgangsee 🌊",
     gfPlaces: [
       { label: "🌿 Triangel Restaurant", waze: "https://waze.com/ul?ll=47.7998,13.0455&navigate=yes" },
       { label: "🥂 Carpe Diem Finest Fingerfood", waze: "https://waze.com/ul?ll=47.8008,13.0432&navigate=yes" },
@@ -25,7 +25,7 @@ const days = [
       { label: "🏔️ קייזרטל", waze: "https://waze.com/ul?ll=47.5747,12.1897&navigate=yes" },
       { label: "🏘️ גטריידגאסה זלצבורג", waze: "https://waze.com/ul?ll=47.8004,13.0433&navigate=yes" },
       { label: "🌸 גני מיראבל", waze: "https://waze.com/ul?ll=47.8044,13.0404&navigate=yes" },
-      { label: "🏨 Motel One Salzburg", waze: "https://waze.com/ul?q=Motel+One+Salzburg+Sud&navigate=yes" },
+      { label: "🏨 Strandhotel Margaretha, St. Wolfgang", waze: "https://waze.com/ul?ll=47.7378,13.4458&navigate=yes" },
     ]
   },
   {
@@ -37,8 +37,7 @@ const days = [
       "11:30 Golling – ארוחת צהריים בגשטהוף מקומי"
     ],
     afternoon: [
-      "14:00 אגם Gosausee – הליכה לאורך הגדה הימנית עד סוף האגם הראשון, קרחון Dachstein משתקף במים",
-      "💡 אופציה נוספת: מכרות המלח של הלשטאט (Salzwelten) – מהמרהיבים בעולם, ממש באזור! אם יש אנרגיה אחרי הנקיק שווה מאוד"
+      "14:00 אגם Gosausee – הליכה לאורך הגדה הימנית עד סוף האגם הראשון, קרחון Dachstein משתקף במים"
     ],
     evening: [
       "17:30 נסיעה לאבנטאו (20 דק') + ארוחת ערב שקטה",
@@ -46,7 +45,7 @@ const days = [
     ],
     hotel: "Frauenzimmer by Townhouse – אבנטאו", gf: "Bräugasthof, Golling",
     distance: "זלצבורג←Salzachöfen: 40 ק\"מ | ←Gosausee: 25 ק\"מ | ←אבנטאו: 20 ק\"מ",
-    tip: "גוסאו > הלשטאט – פחות תיירותי, יותר יפה! | 💡 שווה להוסיף: מכרות המלח של הלשטאט (Salzwelten) – העתיקים בעולם, מגלשות עץ ענקיות, אגם תת-קרקעי. כ-35 יורו לאדם, להזמין מראש ב-salzwelten.at",
+    tip: "גוסאו > הלשטאט – פחות תיירותי, יותר יפה!",
     gfPlaces: [
       { label: "🌿 Bräugasthof Abtenau", waze: "https://waze.com/ul?ll=47.5688,13.3453&navigate=yes" },
       { label: "🍽️ Gasthof Zur Post, Golling", waze: "https://waze.com/ul?ll=47.5964,13.1650&navigate=yes" },
@@ -153,11 +152,11 @@ const days = [
     day: 6, date: "27.5", weekday: "שלישי",
     theme: "מחלבה + אגם Achensee – יום רגוע", emoji: "🧀", color: "#8E7D4A",
     morning: [
-      "09:00 נקיק Wolfsklamm (Stans) – הליכה במדרגות עץ לאורך מפל עד לכנסייה למעלה, כשעה וחצי",
-      "11:30 מחלבת Erlebnis Sennerei Zillertal – סיור עצמאי, טעימות גבינות + ארוחת צהריים ב-Sennereiküche"
+      "09:30 נסיעה פנורמית על Zillertaler Höhenstraße – כביש מרהיב על פסגות ההרים עם עצירות תצפית",
+      "12:00 Mayrhofen – עיירה אלפינית ציורית, ארוחת צהריים + שיטוט"
     ],
     afternoon: [
-      "13:30 נסיעה לאגם Achensee (45 דק') + צ'ק-אין מהיר",
+      "14:30 Schlegeis Stausee – נסיעה דרמטית לסכר בין ההרים, נוף על קרחון",
       "Karwendelbahn – רכבל לגובה 1,780 מ', תצפית מדהימה על האגם וההרים",
       "חלופה: הליכה לאורך שפת האגם לכיוון Achenkirch, או קיאק/סירת משוטים 🚣"
     ],
@@ -165,18 +164,18 @@ const days = [
       "שקיעה מהמרפסת",
       "ארוחת ערב במלון או בכפר Pertisau | לינה: Seehotel Einwaller – ספא גג + נוף לאגם + מזח פרטי"
     ],
-    hotel: "Seehotel Einwaller, Pertisau – מזח פרטי, ספא גג, מבוגרים בלבד", gf: "Sennereiküche במחלבה",
-    distance: "Rattenberg←Stans: 30 ק\"מ | ←Mayrhofen: 25 ק\"מ | ←Achensee: 45 ק\"מ",
-    tip: "חלופת גשם: עולם הקריסטלים של סברובסקי",
+    hotel: "PACHMAIR 1453 Apart Resort – Uderns, Zillertal", gf: "מסעדות ב-Mayrhofen",
+    distance: "רטנברג←Uderns: 35 ק\"מ | ←Mayrhofen: 10 ק\"מ | ←Schlegeis: 30 ק\"מ",
+    tip: "Zillertaler Höhenstraße – לנסוע לאט ולעצור לתצפיות! | Schlegeis – כביש צר ומרהיב",
     gfPlaces: [
       { label: "🧀 Sennereiküche (במחלבה עצמה)", waze: "https://waze.com/ul?ll=47.1667,11.8667&navigate=yes" },
       { label: "🌿 Seehotel Einwaller (המלון)", waze: "https://waze.com/ul?q=Seehotel+Einwaller+Pertisau&navigate=yes" },
     ],
     stops: [
-      { label: "🪨 נקיק Wolfsklamm (Stans)", waze: "https://waze.com/ul?ll=47.4172,11.7797&navigate=yes" },
-      { label: "🧀 מחלבת Sennerei Zillertal", waze: "https://waze.com/ul?ll=47.1667,11.8667&navigate=yes" },
+      { label: "🏔️ Zillertaler Höhenstraße", waze: "https://waze.com/ul?ll=47.2500,11.8500&navigate=yes" },
+      { label: "🏘️ Mayrhofen", waze: "https://waze.com/ul?ll=47.1667,11.8667&navigate=yes" },
       { label: "🚡 Karwendelbahn (Pertisau)", waze: "https://waze.com/ul?ll=47.4333,11.7167&navigate=yes" },
-      { label: "🏨 Seehotel Einwaller", waze: "https://waze.com/ul?q=Seehotel+Einwaller+Pertisau&navigate=yes" },
+      { label: "🏨 PACHMAIR 1453, Uderns", waze: "https://waze.com/ul?q=PACHMAIR+1453+Uderns&navigate=yes" },
     ]
   },
   {
@@ -187,15 +186,15 @@ const days = [
       "11:00 אינסברוק – הגג הזהב Goldenes Dachl, ארמון Hofburg, Maria-Theresien-Straße"
     ],
     afternoon: [
-      "14:30 Nordkettenbahn – רכבל ממרכז העיר ל-2,300 מ'! תצפית 360° על אינסברוק וההרים",
-      "חלופה: עולם הקריסטלים של סברובסקי (20 דק')"
+      "13:00 Swarovski Crystal Worlds, Wattens (15 דק' מאינסברוק) – מערות קריסטל, אמנות ויזואלית מרהיבה, גן קסום. כ-21 יורו לאדם",
+      "15:30 Nordkettenbahn – רכבל ממרכז העיר ל-2,300 מ'! תצפית 360° על אינסברוק וההרים"
     ],
     evening: [
       "18:00 ערב חופשי – רחובות העיר העתיקה, גשר Innbrücke, מסעדה לבחירה",
       "לינה: Altstadthotel Weisses Kreuz"
     ],
     hotel: "Altstadthotel Weisses Kreuz – אינסברוק", gf: "Lichtblick (קומה 7), עוגות – Café Munding",
-    distance: "Pertisau←Hall: 50 ק\"מ | ←אינסברוק: 10 ק\"מ",
+    distance: "Uderns←Hall in Tirol: 45 ק\"מ | ←Wattens (Swarovski): 10 ק\"מ | ←אינסברוק: 15 ק\"מ",
     tip: "הרכבל Nordkette – חובה ביום בהיר!",
     gfPlaces: [
       { label: "🌿 Lichtblick Restaurant (קומה 7)", waze: "https://waze.com/ul?ll=47.2682,11.3928&navigate=yes" },
