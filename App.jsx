@@ -33,18 +33,18 @@ const days = [
     theme: "Salzachöfen + Gosausee", emoji: "🏔️", color: "#4A7C8E",
     morning: [
       "07:30 הלשטאט – סיבוב קצר בעיירה לפני העומס",
-      "09:00 נקיק Salzachöfen (30 דק' מזלצבורג) – חצוב לעומק 90 מ', דום טבעי מסלעים, 3 יורו כניסה, כשעה-שעתיים הליכה",
-      "11:30 Golling – ארוחת צהריים בגשטהוף מקומי"
+      "09:00 אגם Gosausee (15 דק' מהלשטאט) – הליכה לאורך הגדה הימנית עד סוף האגם הראשון, קרחון Dachstein משתקף במים"
     ],
     afternoon: [
-      "14:00 אגם Gosausee – הליכה לאורך הגדה הימנית עד סוף האגם הראשון, קרחון Dachstein משתקף במים"
+      "11:30 נקיק Salzachöfen – חצוב לעומק 90 מ', דום טבעי מסלעים, 3 יורו כניסה, כשעה-שעתיים הליכה",
+      "13:30 Golling – ארוחת צהריים בגשטהוף מקומי"
     ],
     evening: [
       "17:30 נסיעה לאבנטאו (20 דק') + ארוחת ערב שקטה",
       "לינה: Frauenzimmer by Townhouse, אבנטאו"
     ],
     hotel: "Frauenzimmer by Townhouse – אבנטאו", gf: "Bräugasthof, Golling",
-    distance: "זלצבורג←Salzachöfen: 40 ק\"מ | ←Gosausee: 25 ק\"מ | ←אבנטאו: 20 ק\"מ",
+    distance: "St. Wolfgang←הלשטאט: 25 ק\"מ | ←Gosausee: 15 ק\"מ | ←Salzachöfen: 40 ק\"מ | ←אבנטאו: 20 ק\"מ",
     tip: "גוסאו > הלשטאט – פחות תיירותי, יותר יפה! | 💡 באזור: Bad Gastein – עיירה אלפינית עם מפל בלב העיירה, 40 דק' מאבנטאו, שווה אם יש זמן פנוי",
     gfPlaces: [
       { label: "🌿 Bräugasthof Abtenau", waze: "https://waze.com/ul?ll=47.5688,13.3453&navigate=yes" },
@@ -52,9 +52,9 @@ const days = [
     ],
     stops: [
       { label: "🏘️ הלשטאט", waze: "https://waze.com/ul?ll=47.5622,13.6493&navigate=yes" },
+      { label: "🏔️ אגם Gosausee", waze: "https://waze.com/ul?ll=47.5358,13.5281&navigate=yes" },
       { label: "🪨 נקיק Salzachöfen", waze: "https://waze.com/ul?ll=47.5897,13.1714&navigate=yes" },
       { label: "🍽️ Golling an der Salzach", waze: "https://waze.com/ul?ll=47.5964,13.1650&navigate=yes" },
-      { label: "🏔️ אגם Gosausee", waze: "https://waze.com/ul?ll=47.5358,13.5281&navigate=yes" },
       { label: "🏨 Abtenau (מלון)", waze: "https://waze.com/ul?ll=47.5688,13.3453&navigate=yes" },
     ]
   },
@@ -195,7 +195,7 @@ const days = [
       "לינה: Altstadthotel Weisses Kreuz"
     ],
     hotel: "Altstadthotel Weisses Kreuz – אינסברוק", gf: "Lichtblick (קומה 7), עוגות – Café Munding",
-    distance: "Uderns←Hall in Tirol: 45 ק\"מ | ←Wattens (Swarovski): 10 ק\"מ | ←אינסברוק: 15 ק\"מ",
+    distance: "Uderns←Top of Tyrol: 30 ק\"מ | ←Swarovski: 40 ק\"מ | ←Hall in Tirol: 10 ק\"מ | ←אינסברוק: 10 ק\"מ",
     tip: "הרכבל Nordkette – חובה ביום בהיר!",
     gfPlaces: [
       { label: "🌿 Lichtblick Restaurant (קומה 7)", waze: "https://waze.com/ul?ll=47.2682,11.3928&navigate=yes" },
