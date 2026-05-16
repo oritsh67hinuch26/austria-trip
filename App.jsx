@@ -9,12 +9,12 @@ const days = [
       "קייזרטל (45 דק' מהנמל) – עמק ללא מכוניות: 280 מדרגות Kaiseraufstieg, כנסיית Antonius הפוטוגנית, בתי קפה כפריים מקומיים"
     ],
     afternoon: [
-      "16:30 זלצבורג (30 דק' מקייזרטל) – Getreidegasse, כיכר Residenzplatz, גני Mirabell",
-      "18:30 נסיעה ל-St. Wolfgang על אגם Wolfgangsee (30 דק')"
+      "Mondsee (20 דק' מ-St. Wolfgang) – כנסיית Sound of Music + עיירה קסומה על האגם",
+      "St. Wolfgang – טיול ערב על שפת האגם"
     ],
     evening: ["ארוחת ערב שקטה בכפר עם נוף לאגם", "לינה: Strandhotel Margaretha, St. Wolfgang"],
     hotel: "Strandhotel Margaretha – St. Wolfgang, אגם Wolfgangsee", gf: "Triangel, Carpe Diem (זלצבורג)",
-    distance: "מינכן←קייזרטל: 90 ק\"מ | ←זלצבורג: 45 ק\"מ | ←St. Wolfgang: 30 ק\"מ | סה\"כ ~165 ק\"מ",
+    distance: "מינכן שדה תעופה←St. Wolfgang: ~130 ק\"מ | ~120 דק' | ←Mondsee: 20 ק\"מ",
     tip: "לרכוש מדבקת כבישים (Vignette) לאוסטריה בתחנת דלק לפני הגבול | St. Wolfgang – כפר קסום על אגם Wolfgangsee 🌊",
     gfPlaces: [
       { label: "🌿 Triangel Restaurant", waze: "https://waze.com/ul?ll=47.7998,13.0455&navigate=yes" },
@@ -22,10 +22,8 @@ const days = [
     ],
     stops: [
       { label: "✈️ שדה תעופה מינכן", waze: "https://waze.com/ul?ll=48.3537,11.7750&navigate=yes" },
-      { label: "🏔️ קייזרטל", waze: "https://waze.com/ul?ll=47.5747,12.1897&navigate=yes" },
-      { label: "🏘️ גטריידגאסה זלצבורג", waze: "https://waze.com/ul?ll=47.8004,13.0433&navigate=yes" },
-      { label: "🌸 גני מיראבל", waze: "https://waze.com/ul?ll=47.8044,13.0404&navigate=yes" },
       { label: "🏨 Strandhotel Margaretha, St. Wolfgang", waze: "https://waze.com/ul?ll=47.7378,13.4458&navigate=yes" },
+      { label: "⛪ Mondsee – כנסיית Sound of Music", waze: "https://waze.com/ul?ll=47.8553,13.3497&navigate=yes" },
     ]
   },
   {
@@ -150,10 +148,10 @@ const days = [
   },
   {
     day: 6, date: "27.5", weekday: "שלישי",
-    theme: "מחלבה + אגם Achensee – יום רגוע", emoji: "🧀", color: "#8E7D4A",
+    theme: "Zillertal – כביש פנורמי + Mayrhofen + מפל", emoji: "🏔️", color: "#8E7D4A",
     morning: [
-      "09:30 נסיעה פנורמית על Zillertaler Höhenstraße – כביש מרהיב על פסגות ההרים עם עצירות תצפית",
-      "12:00 Mayrhofen – עיירה אלפינית ציורית, ארוחת צהריים + שיטוט"
+      "09:00 Zillertaler Höhenstraße – כביש פנורמי מרהיב על פסגות ההרים עם עצירות תצפית לאורך הדרך",
+      "12:00 Mayrhofen – עיירה אלפינית ציורית, ארוחת צהריים + שיטוט קצר"
     ],
     afternoon: [
       "14:00 Durlaßboden Speichersee – סכר ראשון עם מים טורקיז מרהיבים בדרך",
@@ -165,9 +163,9 @@ const days = [
       "שקיעה מהמרפסת",
       "ארוחת ערב במלון או בכפר Pertisau | לינה: Seehotel Einwaller – ספא גג + נוף לאגם + מזח פרטי"
     ],
-    hotel: "PACHMAIR 1453 Apart Resort – Uderns, Zillertal", gf: "מסעדות ב-Mayrhofen",
-    distance: "רטנברג←Uderns: 35 ק\"מ | ←Mayrhofen: 10 ק\"מ | ←Schlegeis: 30 ק\"מ",
-    tip: "Zillertaler Höhenstraße – לנסוע לאט ולעצור לתצפיות! | Schlegeis – כביש צר ומרהיב",
+    hotel: "PACHMAIR 1453 Apart Resort – Uderns, Zillertal", gf: "מסעדות ב-Mayrhofen – Wirtshaus zum Griena מומלצת",
+    distance: "רטנברג←Uderns: 35 ק\"מ | ←Zillertaler Höhenstraße: 20 ק\"מ | ←Mayrhofen: 15 ק\"מ | ←Talbach: 10 ק\"מ",
+    tip: "Zillertaler Höhenstraße – לנסוע לאט ולעצור לתצפיות! | Talbach Wasserfall – ממש ליד המלון, לא לפספס",
     gfPlaces: [
       { label: "🧀 Sennereiküche (במחלבה עצמה)", waze: "https://waze.com/ul?ll=47.1667,11.8667&navigate=yes" },
       { label: "🌿 Seehotel Einwaller (המלון)", waze: "https://waze.com/ul?q=Seehotel+Einwaller+Pertisau&navigate=yes" },
@@ -195,7 +193,7 @@ const days = [
       "לינה: Altstadthotel Weisses Kreuz"
     ],
     hotel: "Altstadthotel Weisses Kreuz – אינסברוק", gf: "Lichtblick (קומה 7), עוגות – Café Munding",
-    distance: "Uderns←Top of Tyrol: 30 ק\"מ | ←Swarovski: 40 ק\"מ | ←Hall in Tirol: 10 ק\"מ | ←אינסברוק: 10 ק\"מ",
+    distance: "Uderns←Hall in Tirol: 45 ק\"מ | ←Wattens (Swarovski): 10 ק\"מ | ←אינסברוק: 15 ק\"מ",
     tip: "הרכבל Nordkette – חובה ביום בהיר!",
     gfPlaces: [
       { label: "🌿 Lichtblick Restaurant (קומה 7)", waze: "https://waze.com/ul?ll=47.2682,11.3928&navigate=yes" },
