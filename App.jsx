@@ -3,10 +3,10 @@ const { useState } = React;
 const days = [
   {
     day: 1, date: "22.5", weekday: "חמישי",
-    theme: "מינכן ← קייזרטל ← זלצבורג", emoji: "✈️", color: "#5B8E7D",
+    theme: "מינכן ← St. Wolfgang ← Mondsee", emoji: "✈️", color: "#5B8E7D",
     morning: [
       "12:30 נחיתה מינכן + קבלת רכב",
-      "קייזרטל (45 דק' מהנמל) – עמק ללא מכוניות: 280 מדרגות Kaiseraufstieg, כנסיית Antonius הפוטוגנית, בתי קפה כפריים מקומיים"
+      "נסיעה ל-St. Wolfgang (~120 דק') – כפר קסום על אגם Wolfgangsee"
     ],
     afternoon: [
       "Mondsee (20 דק' מ-St. Wolfgang) – כנסיית Sound of Music + עיירה קסומה על האגם",
