@@ -15,13 +15,14 @@ const days = [
     evening: ["ארוחת ערב שקטה בכפר עם נוף לאגם", "לינה: Strandhotel Margaretha, St. Wolfgang"],
     hotel: "Strandhotel Margaretha – St. Wolfgang, אגם Wolfgangsee", gf: "Triangel, Carpe Diem (זלצבורג)",
     distance: "מינכן שדה תעופה←St. Wolfgang: ~130 ק\"מ | ~120 דק' | ←Mondsee: 20 ק\"מ",
-    tip: "לרכוש מדבקת כבישים (Vignette) לאוסטריה בתחנת דלק לפני הגבול | St. Wolfgang – כפר קסום על אגם Wolfgangsee 🌊",
+    tip: "🚗 בדלפק ההשכרה: בקשו כרטיס/צ'יפ טעינה (Charging card) | ⛽ עצירה מומלצת: IONITY ב-Bernau am Chiemsee – טעינה מהירה + קניית סים ב-ALDI SÜD (כ-10 יורו!) + קפה | 🏷️ לרכוש Vignette (מדבקת כבישים) בתחנת דלק לפני הגבול האוסטרי",
     gfPlaces: [
       { label: "🌿 Triangel Restaurant", waze: "https://waze.com/ul?ll=47.7998,13.0455&navigate=yes" },
       { label: "🥂 Carpe Diem Finest Fingerfood", waze: "https://waze.com/ul?ll=47.8008,13.0432&navigate=yes" },
     ],
     stops: [
       { label: "✈️ שדה תעופה מינכן", waze: "https://waze.com/ul?ll=48.3537,11.7750&navigate=yes" },
+      { label: "⚡ IONITY + ALDI SÜD, Bernau am Chiemsee", waze: "https://waze.com/ul?ll=47.8167,12.3667&navigate=yes" },
       { label: "🏨 Strandhotel Margaretha, St. Wolfgang", waze: "https://waze.com/ul?ll=47.7378,13.4458&navigate=yes" },
       { label: "⛪ Mondsee – כנסיית Sound of Music", waze: "https://waze.com/ul?ll=47.8553,13.3497&navigate=yes" },
     ]
@@ -296,6 +297,7 @@ const days = [
       { label: "🎨 Oberammergau", waze: "https://waze.com/ul?ll=47.5983,11.0669&navigate=yes" },
       { label: "🌊 אגם Starnberg", waze: "https://waze.com/ul?ll=47.9969,11.3414&navigate=yes" },
       { label: "✈️ שדה תעופה מינכן", waze: "https://waze.com/ul?ll=48.3537,11.7750&navigate=yes" },
+      { label: "⚡ IONITY + ALDI SÜD, Bernau am Chiemsee", waze: "https://waze.com/ul?ll=47.8167,12.3667&navigate=yes" },
     ]
   }
 ];
