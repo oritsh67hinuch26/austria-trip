@@ -6,7 +6,8 @@ const days = [
     theme: "מינכן ← St. Wolfgang ← Mondsee", emoji: "✈️", color: "#5B8E7D",
     morning: [
       "12:30 נחיתה מינכן + קבלת רכב",
-      "נסיעה ל-St. Wolfgang (~120 דק') – כפר קסום על אגם Wolfgangsee"
+      "נסיעה לכיוון St. Wolfgang",
+      "עצירה באגם Chiemsee – ממש על הדרך! קפה + נוף לאגם הענק עם ההרים ברקע, 20-30 דק'"
     ],
     afternoon: [
       "Mondsee (20 דק' מ-St. Wolfgang) – כנסיית Sound of Music + עיירה קסומה על האגם",
@@ -22,7 +23,8 @@ const days = [
     ],
     stops: [
       { label: "✈️ שדה תעופה מינכן", waze: "https://waze.com/ul?ll=48.3537,11.7750&navigate=yes" },
-      { label: "⚡ IONITY + ALDI SÜD, Bernau am Chiemsee", waze: "https://waze.com/ul?ll=47.8167,12.3667&navigate=yes" },
+      { label: "⚡ IONITY + קפה, Bernau am Chiemsee", waze: "https://waze.com/ul?ll=47.8167,12.3667&navigate=yes" },
+      { label: "🌊 אגם Chiemsee – עצירה", waze: "https://waze.com/ul?ll=47.8553,12.4333&navigate=yes" },
       { label: "🏨 Strandhotel Margaretha, St. Wolfgang", waze: "https://waze.com/ul?ll=47.7378,13.4458&navigate=yes" },
       { label: "⛪ Mondsee – כנסיית Sound of Music", waze: "https://waze.com/ul?ll=47.8553,13.3497&navigate=yes" },
     ]
@@ -36,7 +38,7 @@ const days = [
     ],
     afternoon: [
       "11:30 נקיק Salzachöfen – חצוב לעומק 90 מ', דום טבעי מסלעים, 3 יורו כניסה, כשעה-שעתיים הליכה",
-      "13:30 Golling – ארוחת צהריים בגשטהוף מקומי"
+      "13:30 Golling – ארוחת צהריים בגשטהוף מקומי + מפל גולינג (Golling Wasserfall) – 75 מ' גובה, הליכה קלה 20 דק' מהעיירה, כניסה חינם! | אופציה: טירת גולינג מהמאה ה-12"
     ],
     evening: [
       "17:30 נסיעה לאבנטאו (20 דק') + ארוחת ערב שקטה",
@@ -61,7 +63,7 @@ const days = [
     day: 3, date: "24.5", weekday: "שבת",
     theme: "🎂 יום הולדת! Hohenwerfen + Zell am See", emoji: "🎂", color: "#8E5B7D",
     morning: [
-      "09:30 טירת Hohenwerfen – סיור בטירה, הגעה מוקדמת",
+      "09:30 טירת Hohenwerfen – טירה מהמאה ה-11 על צוק מרהיב, סיור מודרך בפנים, תצפית על העמק. להגיע מוקדם לפני ההמון!",
       "11:15 מופע הבזים – חובה לאוהבי בעלי חיים!",
       "13:30 נקיק זיגמונד-טון (קפרון) – כשעה הליכה בנקיק הטורקיז"
     ],
@@ -95,7 +97,7 @@ const days = [
       "תצפית עליונה על הסכר – מחייב!"
     ],
     afternoon: [
-      "12:00 Grossglockner High Alpine Road – הכביש הפנורמי היפה ביותר באלפים",
+      "12:00 Grossglockner High Alpine Road – הכביש הפנורמי היפה ביותר באלפים. כניסה בתשלום: ~40 יורו לרכב, לשלם בכניסה",
       "עצירת חובה: Edelweissspitze – הנקודה הגבוהה ביותר אליה ניתן להגיע ברכב",
       "Franz-Josef-Höhe – צפייה בקרחון Pasterze ומרמיטות 🦔"
     ],
@@ -126,7 +128,7 @@ const days = [
     ],
     afternoon: [
       "12:00 מעבר Gerlos Pass – תצפיות פנורמיות ועצירה ב-Gerlos Stausee (מים טורקיז)",
-      "14:30 Rattenberg – העיר הקטנה באוסטריה (400 מ' אורך!), חנויות זכוכית, רחובות מהמאה ה-13"
+      "14:30 Rattenberg – העיר הקטנה באוסטריה (400 מ' אורך!): רחובות מהמאה ה-13, חנויות זכוכית מפורסמות עולמיות – העיר הקטנה באוסטריה (400 מ' אורך!), חנויות זכוכית, רחובות מהמאה ה-13"
     ],
     evening: [
       "17:00 צ'ק-אין + סיור קצר בעיר",
@@ -151,7 +153,7 @@ const days = [
     day: 6, date: "27.5", weekday: "שלישי",
     theme: "Zillertal – כביש פנורמי + Mayrhofen + מפל", emoji: "🏔️", color: "#8E7D4A",
     morning: [
-      "09:00 Zillertaler Höhenstraße – כביש פנורמי מרהיב על פסגות ההרים עם עצירות תצפית לאורך הדרך",
+      "09:00 Zillertaler Höhenstraße – לעלות מ-Kaltenbach ולרדת לכיוון Hippach | עצירות חובה: Melchboden (2,020 מ') – תצפית 360° מדהימה | ארץ המרמיטות (Murmelland) – מרמיטות אלפיניות מקרוב 🦔 | שביל Hubertus Wildlife Trail – קצר וקל, 12 תחנות אינטראקטיביות",
       "12:00 Mayrhofen – עיירה אלפינית ציורית, ארוחת צהריים + שיטוט קצר"
     ],
     afternoon: [
@@ -162,14 +164,15 @@ const days = [
     ],
     evening: [
       "שקיעה מהמרפסת",
-      "ארוחת ערב במלון או בכפר Pertisau | לינה: Seehotel Einwaller – ספא גג + נוף לאגם + מזח פרטי"
+      "ארוחת ערב + לינה: PACHMAIR 1453 Apart Resort, Uderns, Zillertal"
     ],
     hotel: "PACHMAIR 1453 Apart Resort – Uderns, Zillertal", gf: "מסעדות ב-Mayrhofen – Wirtshaus zum Griena מומלצת",
     distance: "רטנברג←Uderns: 35 ק\"מ | ←Zillertaler Höhenstraße: 20 ק\"מ | ←Mayrhofen: 15 ק\"מ | ←Talbach: 10 ק\"מ",
-    tip: "Zillertaler Höhenstraße – לנסוע לאט ולעצור לתצפיות! | Talbach Wasserfall – ממש ליד המלון, לא לפספס",
+    tip: "Zillertaler Höhenstraße: לעלות מ-Kaltenbach, לרדת לכיוון Hippach | כביש חד-נתיבי – זכות קדימה לרכב עולה! | בגובה 2,000 מ' – 8-12°C בלבד, לקחת ג'קט חם! | Talbach Wasserfall – ממש ליד המלון",
     gfPlaces: [
-      { label: "🧀 Sennereiküche (במחלבה עצמה)", waze: "https://waze.com/ul?ll=47.1667,11.8667&navigate=yes" },
-      { label: "🌿 Seehotel Einwaller (המלון)", waze: "https://waze.com/ul?q=Seehotel+Einwaller+Pertisau&navigate=yes" },
+      { label: "🏔️ Zellberg Stüberl (על הכביש הפנורמי)", waze: "https://waze.com/ul?ll=47.2167,11.8833&navigate=yes" },
+      { label: "🍲 Kaltenbacher Skihütte – גולאש + שניצל", waze: "https://waze.com/ul?ll=47.2333,11.8667&navigate=yes" },
+      { label: "🌿 Wirtshaus zum Griena, Mayrhofen", waze: "https://waze.com/ul?ll=47.1667,11.8667&navigate=yes" },
     ],
     stops: [
       { label: "🏔️ Zillertaler Höhenstraße", waze: "https://waze.com/ul?ll=47.2500,11.8500&navigate=yes" },
@@ -213,7 +216,7 @@ const days = [
     theme: "יום נסיעות ארוך → פוסן", emoji: "🌉", color: "#5B4A8E",
     morning: [
       "09:30 נקיק Leutaschklamm (30 דק' מאינסברוק) – הליכה מעגלית כשעה וחצי על גשרי פלדה מעל נהר גועש",
-      "11:30 Mittenwald – עיירת הציורים: כל הבתים מצוירים (Lüftlmalerei), ארוחת צהריים בעיר העתיקה"
+      "11:30 Mittenwald – עיירת הציורים: כל הבתים מצוירים (Lüftlmalerei), מוזיאון הכינורות המפורסם (עיירת יצרני כינורות מהמאה ה-17!), ארוחת צהריים בעיר העתיקה"
     ],
     afternoon: [
       "14:00 Highline 179 ליד Reutte – אחד מגשרי החבלים הארוכים בעולם, מחבר שתי מצודות עתיקות, עלייה במיני-פוניקולר"
@@ -246,7 +249,7 @@ const days = [
     ],
     afternoon: [
       "12:30 אגם Alpsee – הליכה מישורית נעימה על שפת המים",
-      "14:30 כנסיית Wies (UNESCO) – 'הקפלה הסיסטינית של בוואריה' (25 דק' מהאגם)",
+      "14:30 כנסיית Wies (UNESCO, 25 דק' מהאגם) – 'הקפלה הסיסטינית של בוואריה': תקרה מצוירת מרהיבה, יצירת בארוק מהמאה ה-18. הכנסייה קטנה – לבוא מוקדם!",
       "16:30 צ'ק-אין ל-Hotel Müller, Schwangau"
     ],
     evening: [
@@ -276,7 +279,7 @@ const days = [
       "10:30 מנזר Ettal – גבינות וליקרים מקומיים"
     ],
     afternoon: [
-      "11:00 Oberammergau – כפר שכל בית מצויר מהרצפה לגג, שעה-שעתיים: הליכה, קפה, צהריים",
+      "11:00 Oberammergau – כפר שכל בית מצויר מהרצפה לגג: ציורי דת ונופים מרהיבים, חנויות גילוף עץ מפורסמות (מסורת של מאות שנים!), קפה וצהריים בכיכר",
       "15:00 יציאה לשדה + עצירה ב-Starnberg (על הדרך) – 10 דק' על הטיילת של האגם"
     ],
     evening: [
@@ -297,7 +300,8 @@ const days = [
       { label: "🎨 Oberammergau", waze: "https://waze.com/ul?ll=47.5983,11.0669&navigate=yes" },
       { label: "🌊 אגם Starnberg", waze: "https://waze.com/ul?ll=47.9969,11.3414&navigate=yes" },
       { label: "✈️ שדה תעופה מינכן", waze: "https://waze.com/ul?ll=48.3537,11.7750&navigate=yes" },
-      { label: "⚡ IONITY + ALDI SÜD, Bernau am Chiemsee", waze: "https://waze.com/ul?ll=47.8167,12.3667&navigate=yes" },
+      { label: "⚡ IONITY + קפה, Bernau am Chiemsee", waze: "https://waze.com/ul?ll=47.8167,12.3667&navigate=yes" },
+      { label: "🌊 אגם Chiemsee – עצירה", waze: "https://waze.com/ul?ll=47.8553,12.4333&navigate=yes" },
     ]
   }
 ];
