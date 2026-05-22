@@ -3,20 +3,19 @@ const { useState } = React;
 const days = [
   {
     day: 1, date: "22.5", weekday: "חמישי",
-    theme: "מינכן ← St. Wolfgang ← Mondsee", emoji: "✈️", color: "#5B8E7D",
+    theme: "וינה ← St. Wolfgang", emoji: "✈️", color: "#5B8E7D",
     morning: [
-      "12:30 נחיתה מינכן + קבלת רכב",
-      "נסיעה לכיוון St. Wolfgang",
-      "עצירה באגם Chiemsee – ממש על הדרך! קפה + נוף לאגם הענק עם ההרים ברקע, 20-30 דק'"
+      "18:00 נחיתה וינה + קבלת רכב",
+      "נסיעה ישירה ל-St. Wolfgang (~2.5 שעות)"
     ],
     afternoon: [
-      "Mondsee (20 דק' מ-St. Wolfgang) – כנסיית Sound of Music + עיירה קסומה על האגם",
-      "St. Wolfgang – טיול ערב על שפת האגם"
+      "הגעה ~20:30 – טיול ערב על שפת האגם Wolfgangsee",
+      "כנסיית St. Wolfgang המפורסמת (אם פתוחה)"
     ],
     evening: ["ארוחת ערב שקטה בכפר עם נוף לאגם", "לינה: Strandhotel Margaretha, St. Wolfgang"],
     hotel: "Strandhotel Margaretha – St. Wolfgang, אגם Wolfgangsee", gf: "Triangel, Carpe Diem (זלצבורג)",
     distance: "מינכן שדה תעופה←St. Wolfgang: ~130 ק\"מ | ~120 דק' | ←Mondsee: 20 ק\"מ",
-    tip: "🚗 בדלפק ההשכרה: בקשו כרטיס/צ'יפ טעינה (Charging card) | ⛽ עצירה מומלצת: IONITY ב-Bernau am Chiemsee – טעינה מהירה + קניית סים ב-ALDI SÜD (כ-10 יורו!) + קפה | 🏷️ לרכוש Vignette (מדבקת כבישים) בתחנת דלק לפני הגבול האוסטרי",
+    tip: "🚗 בדלפק ההשכרה: בקשו כרטיס/צ'יפ טעינה (Charging card) | 🏷️ לרכוש Vignette (מדבקת כבישים) באוסטריה – כבר בדרך מהשדה",
     gfPlaces: [
       { label: "🌿 Triangel Restaurant", waze: "https://waze.com/ul?ll=47.7998,13.0455&navigate=yes" },
       { label: "🥂 Carpe Diem Finest Fingerfood", waze: "https://waze.com/ul?ll=47.8008,13.0432&navigate=yes" },
@@ -31,40 +30,38 @@ const days = [
   },
   {
     day: 2, date: "23.5", weekday: "שישי",
-    theme: "Salzachöfen + Gosausee", emoji: "🏔️", color: "#4A7C8E",
+    theme: "נקיק Salzachöfen + גולינג", emoji: "🏔️", color: "#4A7C8E",
     morning: [
-      "07:30 הלשטאט – סיבוב קצר בעיירה לפני העומס",
-      "09:00 אגם Gosausee (15 דק' מהלשטאט) – הליכה לאורך הגדה הימנית עד סוף האגם הראשון, קרחון Dachstein משתקף במים"
+      "09:00 נקיק Salzachöfen (שעה מ-St. Wolfgang) – חצוב לעומק 90 מ', דום טבעי מסלעים, 3 יורו כניסה, כשעה-שעתיים הליכה"
     ],
     afternoon: [
-      "11:30 נקיק Salzachöfen – חצוב לעומק 90 מ', דום טבעי מסלעים, 3 יורו כניסה, כשעה-שעתיים הליכה",
-      "13:30 Golling – ארוחת צהריים בגשטהוף מקומי + מפל גולינג (Golling Wasserfall) – 75 מ' גובה, הליכה קלה 20 דק' מהעיירה, כניסה חינם! | אופציה: טירת גולינג מהמאה ה-12"
+      "11:30 Golling – ארוחת צהריים בגשטהוף מקומי + מפל גולינג (Golling Wasserfall) – 75 מ' גובה, הליכה קלה 20 דק', כניסה חינם! | אופציה: טירת גולינג מהמאה ה-12"
     ],
     evening: [
-      "17:30 נסיעה לאבנטאו (20 דק') + ארוחת ערב שקטה",
+      "15:30 נסיעה לאבנטאו (20 דק')",
+      "ארוחת ערב שקטה",
       "לינה: Frauenzimmer by Townhouse, אבנטאו"
     ],
     hotel: "Frauenzimmer by Townhouse – אבנטאו", gf: "Bräugasthof, Golling",
-    distance: "St. Wolfgang←הלשטאט: 25 ק\"מ | ←Gosausee: 15 ק\"מ | ←Salzachöfen: 40 ק\"מ | ←אבנטאו: 20 ק\"מ",
-    tip: "גוסאו > הלשטאט – פחות תיירותי, יותר יפה! | 💡 באזור: Bad Gastein – עיירה אלפינית עם מפל בלב העיירה, 40 דק' מאבנטאו, שווה אם יש זמן פנוי",
+    distance: "St. Wolfgang←Salzachöfen: 50 ק\"מ | ←Golling: 10 ק\"מ | ←אבנטאו: 20 ק\"מ",
+    tip: "💡 Bad Gastein – עיירה אלפינית עם מפל בלב העיירה, 40 דק' מאבנטאו, שווה אם יש זמן פנוי",
     gfPlaces: [
       { label: "🌿 Bräugasthof Abtenau", waze: "https://waze.com/ul?ll=47.5688,13.3453&navigate=yes" },
       { label: "🍽️ Gasthof Zur Post, Golling", waze: "https://waze.com/ul?ll=47.5964,13.1650&navigate=yes" },
     ],
     stops: [
-      { label: "🏘️ הלשטאט", waze: "https://waze.com/ul?ll=47.5622,13.6493&navigate=yes" },
-      { label: "🏔️ אגם Gosausee", waze: "https://waze.com/ul?ll=47.5358,13.5281&navigate=yes" },
       { label: "🪨 נקיק Salzachöfen", waze: "https://waze.com/ul?ll=47.5897,13.1714&navigate=yes" },
-      { label: "🍽️ Golling an der Salzach", waze: "https://waze.com/ul?ll=47.5964,13.1650&navigate=yes" },
+      { label: "🍽️ Golling + מפל", waze: "https://waze.com/ul?ll=47.5964,13.1650&navigate=yes" },
       { label: "🏨 Abtenau (מלון)", waze: "https://waze.com/ul?ll=47.5688,13.3453&navigate=yes" },
     ]
   },
   {
     day: 3, date: "24.5", weekday: "שבת",
-    theme: "🎂 יום הולדת! Hohenwerfen + Zell am See", emoji: "🎂", color: "#8E5B7D",
+    theme: "🎂 יום הולדת! גוסאו + Hohenwerfen + Zell am See", emoji: "🎂", color: "#8E5B7D",
     morning: [
-      "09:30 טירת Hohenwerfen – טירה מהמאה ה-11 על צוק מרהיב, סיור מודרך בפנים, תצפית על העמק. להגיע מוקדם לפני ההמון!",
-      "11:15 מופע הבזים – חובה לאוהבי בעלי חיים!",
+      "08:30 אגם Gosausee (15 דק' מאבנטאו) – הליכה לאורך הגדה הימנית, קרחון Dachstein משתקף במים, נוף מרהיב",
+      "10:30 טירת Hohenwerfen (40 דק' מגוסאו) – טירה מהמאה ה-11 על צוק מרהיב, סיור מודרך, תצפית על העמק",
+      "12:15 מופע הבזים – חובה לאוהבי בעלי חיים! 🦅",
       "13:30 נקיק זיגמונד-טון (קפרון) – כשעה הליכה בנקיק הטורקיז"
     ],
     afternoon: [
@@ -76,13 +73,14 @@ const days = [
       "לינה: ALPIN – Das Sporthotel"
     ],
     hotel: "ALPIN – Das Sporthotel | SUMMERCARD כלולה 🎿", gf: "Kupferkanne, Zell am See",
-    distance: "אבנטאו←Hohenwerfen: 20 ק\"מ | ←Zell am See: 30 ק\"מ",
+    distance: "אבנטאו←Gosausee: 15 ק\"מ | ←Hohenwerfen: 40 ק\"מ | ←נקיק קפרון: 30 ק\"מ | ←Zell am See: 15 ק\"מ",
     tip: "מופע הבזים ב-11:15 – זמן מושלם! | SUMMERCARD מהמלון כולל רכבל חינם!",
     gfPlaces: [
       { label: "☕ Kupferkanne Zell am See", waze: "https://waze.com/ul?ll=47.3244,12.7940&navigate=yes" },
       { label: "🌿 Restaurant Steinerwirt, Zell am See", waze: "https://waze.com/ul?ll=47.3260,12.7950&navigate=yes" },
     ],
     stops: [
+      { label: "🏔️ אגם Gosausee", waze: "https://waze.com/ul?ll=47.5358,13.5281&navigate=yes" },
       { label: "🏰 טירת Hohenwerfen", waze: "https://waze.com/ul?ll=47.4618,13.1872&navigate=yes" },
       { label: "💧 נקיק זיגמונד-טון", waze: "https://waze.com/ul?ll=47.3747,13.1253&navigate=yes" },
       { label: "🏔️ Schmittenhöhe (רכבל)", waze: "https://waze.com/ul?ll=47.3244,12.7931&navigate=yes" },
