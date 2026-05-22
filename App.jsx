@@ -3,19 +3,19 @@ const { useState } = React;
 const days = [
   {
     day: 1, date: "22.5", weekday: "חמישי",
-    theme: "וינה ← St. Wolfgang", emoji: "✈️", color: "#5B8E7D",
+    theme: "וינה ← Gmunden", emoji: "✈️", color: "#5B8E7D",
     morning: [
-      "18:00 נחיתה וינה + קבלת רכב",
-      "נסיעה ישירה ל-St. Wolfgang (~2.5 שעות)"
+      "18:00 נחיתה וינה + קבלת רכב (One Way – החזרה במינכן 31/05)",
+      "נסיעה ל-Gmunden (~2.5 שעות)"
     ],
     afternoon: [
-      "הגעה ~20:30 – טיול ערב על שפת האגם Wolfgangsee",
-      "כנסיית St. Wolfgang המפורסמת (אם פתוחה)"
+      "הגעה ~20:30 – Gmunden על אגם Traunsee",
+      "טיול ערב על שפת האגם"
     ],
-    evening: ["ארוחת ערב שקטה בכפר עם נוף לאגם", "לינה: Strandhotel Margaretha, St. Wolfgang"],
-    hotel: "Strandhotel Margaretha – St. Wolfgang, אגם Wolfgangsee", gf: "Triangel, Carpe Diem (זלצבורג)",
+    evening: ["ארוחת ערב עם נוף לאגם", "לינה: Landhotel Grünberg am See, Gmunden"],
+    hotel: "Landhotel Grünberg am See – Gmunden, אגם Traunsee", gf: "מסעדת המלון",
     distance: "מינכן שדה תעופה←St. Wolfgang: ~130 ק\"מ | ~120 דק' | ←Mondsee: 20 ק\"מ",
-    tip: "🚗 בדלפק ההשכרה: בקשו כרטיס/צ'יפ טעינה (Charging card) | 🏷️ לרכוש Vignette (מדבקת כבישים) באוסטריה – כבר בדרך מהשדה",
+    tip: "🚗 בדלפק ההשכרה: בקשו כרטיס/צ'יפ טעינה (Charging card) | 🏷️ לרכוש Vignette (מדבקת כבישים) באוסטריה – כבר בדרך מהשדה | Gmunden – עיירה קסומה על אגם Traunsee עם טירה על האי!",
     gfPlaces: [
       { label: "🌿 Triangel Restaurant", waze: "https://waze.com/ul?ll=47.7998,13.0455&navigate=yes" },
       { label: "🥂 Carpe Diem Finest Fingerfood", waze: "https://waze.com/ul?ll=47.8008,13.0432&navigate=yes" },
@@ -30,12 +30,14 @@ const days = [
   },
   {
     day: 2, date: "23.5", weekday: "שישי",
-    theme: "נקיק Salzachöfen + גולינג", emoji: "🏔️", color: "#4A7C8E",
+    theme: "הלשטאט + גוסאו + נקיק Salzachöfen", emoji: "🏔️", color: "#4A7C8E",
     morning: [
-      "09:00 נקיק Salzachöfen (שעה מ-St. Wolfgang) – חצוב לעומק 90 מ', דום טבעי מסלעים, 3 יורו כניסה, כשעה-שעתיים הליכה"
+      "07:30 הלשטאט (30 דק' מ-Gmunden) – סיבוב בעיירה לפני העומס",
+      "09:00 גוסאו (15 דק' מהלשטאט) – הליכה לאגם, קרחון Dachstein משתקף במים",
+      "11:00 נקיק Salzachöfen – חצוב לעומק 90 מ', דום טבעי מסלעים, 3 יורו כניסה"
     ],
     afternoon: [
-      "11:30 Golling – ארוחת צהריים בגשטהוף מקומי + מפל גולינג (Golling Wasserfall) – 75 מ' גובה, הליכה קלה 20 דק', כניסה חינם! | אופציה: טירת גולינג מהמאה ה-12"
+      "13:30 Golling – ארוחת צהריים + מפל גולינג (75 מ' גובה, הליכה קלה 20 דק', כניסה חינם!)"
     ],
     evening: [
       "15:30 נסיעה לאבנטאו (20 דק')",
@@ -43,13 +45,15 @@ const days = [
       "לינה: Frauenzimmer by Townhouse, אבנטאו"
     ],
     hotel: "Frauenzimmer by Townhouse – אבנטאו", gf: "Bräugasthof, Golling",
-    distance: "St. Wolfgang←Salzachöfen: 50 ק\"מ | ←Golling: 10 ק\"מ | ←אבנטאו: 20 ק\"מ",
+    distance: "Gmunden←הלשטאט: 30 דק' | ←גוסאו: 15 דק' | ←Salzachöfen: 40 דק' | ←Golling: 10 דק' | ←אבנטאו: 20 דק'",
     tip: "💡 Bad Gastein – עיירה אלפינית עם מפל בלב העיירה, 40 דק' מאבנטאו, שווה אם יש זמן פנוי",
     gfPlaces: [
       { label: "🌿 Bräugasthof Abtenau", waze: "https://waze.com/ul?ll=47.5688,13.3453&navigate=yes" },
       { label: "🍽️ Gasthof Zur Post, Golling", waze: "https://waze.com/ul?ll=47.5964,13.1650&navigate=yes" },
     ],
     stops: [
+      { label: "🏘️ הלשטאט", waze: "https://waze.com/ul?ll=47.5622,13.6493&navigate=yes" },
+      { label: "🏔️ גוסאו", waze: "https://waze.com/ul?ll=47.5358,13.5281&navigate=yes" },
       { label: "🪨 נקיק Salzachöfen", waze: "https://waze.com/ul?ll=47.5897,13.1714&navigate=yes" },
       { label: "🍽️ Golling + מפל", waze: "https://waze.com/ul?ll=47.5964,13.1650&navigate=yes" },
       { label: "🏨 Abtenau (מלון)", waze: "https://waze.com/ul?ll=47.5688,13.3453&navigate=yes" },
