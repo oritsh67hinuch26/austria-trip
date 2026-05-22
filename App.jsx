@@ -31,13 +31,14 @@ const days = [
       "09:00 גוסאו (15 דק' מהלשטאט) – הליכה לאגם, קרחון Dachstein משתקף במים",
       "11:00 נקיק Salzachöfen – חצוב לעומק 90 מ', דום טבעי מסלעים, 3 יורו כניסה",
       "13:30 Golling – ארוחת צהריים + מפל גולינג (75 מ' גובה, הליכה קלה 20 דק', כניסה חינם!)",
-      "15:30 Bad Gastein (40 דק' מגולינג) – עיירה אלפינית ייחודית עם מפל עוצמתי שעובר בלב העיר! רחובות ציוריים, אווירה מיוחדת, כשעה שיטוט",
-      "17:00 נסיעה לאבנטאו (30 דק') + ארוחת ערב",
+      "15:00 אבנטאו (25 דק' מגולינג) – מדרחוב מקסים, נופים ירוקים",
+      "15:30 רכבל Karkogel – מגלשות הרים קיץ, כיף וברוגע! 🛷",
+      "ארוחת ערב באבנטאו + לינה",
       "לינה: Frauenzimmer by Townhouse, אבנטאו"
     ],
     hotel: "Frauenzimmer by Townhouse – אבנטאו", gf: "Bräugasthof, Golling",
-    distance: "Gmunden←הלשטאט: 30 דק' | ←גוסאו: 15 דק' | ←Salzachöfen: 40 דק' | ←Golling: 10 דק' | ←Bad Gastein: 40 דק' | ←אבנטאו: 30 דק'",
-    tip: "Bad Gastein – עיירה אלפינית ייחודית עם מפל בלב העיר, ~40 דק' מגולינג | 💡 כרטיסים לנקיק – 3 יורו בכניסה",
+    distance: "Gmunden←הלשטאט: 30 דק' | ←גוסאו: 15 דק' | ←Salzachöfen: 40 דק' | ←Golling: 10 דק' | ←אבנטאו: 25 דק'",
+    tip: "Karkogel – רכבל קיץ עם מגלשות הרים, כיף לאחה''צ! | כרטיסים לנקיק – 3 יורו בכניסה",
     gfPlaces: [
       { label: "🌿 Bräugasthof Abtenau", waze: "https://waze.com/ul?ll=47.5688,13.3453&navigate=yes" },
       { label: "🍽️ Gasthof Zur Post, Golling", waze: "https://waze.com/ul?ll=47.5964,13.1650&navigate=yes" },
@@ -47,7 +48,7 @@ const days = [
       { label: "🏔️ גוסאו", waze: "https://waze.com/ul?ll=47.5358,13.5281&navigate=yes" },
       { label: "🪨 נקיק Salzachöfen", waze: "https://waze.com/ul?ll=47.5897,13.1714&navigate=yes" },
       { label: "🍽️ Golling + מפל", waze: "https://waze.com/ul?ll=47.5964,13.1650&navigate=yes" },
-      { label: "💧 Bad Gastein – מפל בלב העיר", waze: "https://waze.com/ul?ll=47.1167,13.1333&navigate=yes" },
+      { label: "🛷 רכבל Karkogel, אבנטאו", waze: "https://waze.com/ul?ll=47.5688,13.3500&navigate=yes" },
       { label: "🏨 Frauenzimmer by Townhouse, אבנטאו", waze: "https://waze.com/ul?q=Frauenzimmer+Townhouse+Abtenau&navigate=yes" },
     ]
   },
@@ -110,12 +111,13 @@ const days = [
     schedule: [
       "08:30 מפלי Krimml – הגבוהים באירופה (380 מ'!), 3 רמות מרהיבות, 2.5-3 שעות הליכה, ~6-8 יורו כניסה",
       "12:00 מעבר Gerlos Pass – תצפיות פנורמיות ועצירה ב-Gerlos Stausee (מים טורקיז)",
-      "14:30 Rattenberg – העיר הקטנה באוסטריה (400 מ' אורך!): רחובות מהמאה ה-13, חנויות זכוכית מפורסמות – Hubert Neuerer מומלצת",
+      "13:30 Alpbach – העיירה היפה ביותר באוסטריה! בנייה אחידה מעץ, אדניות פרחים מפורסמות, ממש בדרך לרטנברג",
+      "14:30 Rattenberg – העיר הקטנה באוסטריה (400 מ' אורך!): רחובות מהמאה ה-13, חנויות זכוכית – Hubert Neuerer מומלצת",
       "17:00 צ'ק-אין + סיור קצר בעיר",
       "ארוחת ערב על נהר Inn | לינה: Boutiquehotel Rattenberg (בניין גותי מ-1500, דירוג 9.6)"
     ],
     hotel: "Boutiquehotel Rattenberg – בניין גותי מ-1500, דירוג 9.6", gf: "ברברה מגישה ארוחת בוקר אזורית בעצמה",
-    distance: "Zell am See←Krimml: 35 ק\"מ | ←Gerlos: 45 ק\"מ | ←Rattenberg: 70 ק\"מ",
+    distance: "Zell am See←Krimml: 35 ק\"מ | ←Gerlos: 45 ק\"מ | ←Alpbach: 60 ק\"מ | ←Rattenberg: 10 ק\"מ",
     tip: "חלופת גשם: מכרות הכסף Silver Mine ב-Schwaz",
     gfPlaces: [
       { label: "🌿 Café Antik, Rattenberg", waze: "https://waze.com/ul?ll=47.4397,11.8942&navigate=yes" },
@@ -125,6 +127,7 @@ const days = [
       { label: "💧 מפלי Krimml", waze: "https://waze.com/ul?ll=47.2167,12.1700&navigate=yes" },
       { label: "🏔️ Gerlos Pass", waze: "https://waze.com/ul?ll=47.2383,12.0383&navigate=yes" },
       { label: "💎 Gerlos Stausee", waze: "https://waze.com/ul?ll=47.2500,12.0167&navigate=yes" },
+      { label: "🌸 Alpbach – העיירה היפה ביותר באוסטריה", waze: "https://waze.com/ul?ll=47.3961,11.8636&navigate=yes" },
       { label: "🏘️ Rattenberg", waze: "https://waze.com/ul?ll=47.4397,11.8942&navigate=yes" },
       { label: "🏨 Boutiquehotel Rattenberg", waze: "https://waze.com/ul?q=Boutiquehotel+Rattenberg&navigate=yes" },
     ]
@@ -158,10 +161,10 @@ const days = [
     day: 7, date: "28.5", weekday: "רביעי",
     theme: "Hall in Tirol + אינסברוק", emoji: "🏰", color: "#7D4A5B",
     schedule: [
-      "09:00 Hall in Tirol (20 דק' מהמלון) – עיר עתיקה אותנטית שרוב התיירים מחמיצים: מגדל המטבע, רחובות צבעוניים, שוק קטן",
-      "12:00 Swarovski Crystal Worlds, Wattens (10 דק' מ-Hall) – מערות קריסטל, אמנות ויזואלית מרהיבה, גן קסום. כ-21 יורו לאדם, כשעה-שעתיים",
-      "15:30 Nordkettenbahn – רכבל ממרכז העיר ל-2,300 מ'! תצפית 360° על אינסברוק וההרים",
-      "18:00 ערב חופשי – רחובות העיר העתיקה, גשר Innbrücke, מסעדה לבחירה",
+      "09:00 Hall in Tirol (45 דק' מ-Uderns) – עיר עתיקה אותנטית: מגדל המטבע, רחובות צבעוניים, שוק קטן. כשעה",
+      "11:00 Swarovski Crystal Worlds, Wattens (10 דק' מ-Hall) – מערות קריסטל, אמנות ויזואלית, גן קסום. כ-21 יורו לאדם",
+      "13:00 אינסברוק – צ'ק-אין + Nordkettenbahn (רכבל ל-2,300 מ'! תצפית 360°)",
+      "17:00 שיטוט רגוע בעיר העתיקה – הגג הזהב, ארמון Hofburg, רחובות ערב קסומים 🌙",
       "לינה: Altstadthotel Weisses Kreuz"
     ],
     hotel: "Altstadthotel Weisses Kreuz – אינסברוק", gf: "Lichtblick (קומה 7), עוגות – Café Munding",
