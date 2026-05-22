@@ -33,6 +33,7 @@ const days = [
     theme: "הלשטאט + גוסאו + נקיק Salzachöfen", emoji: "🏔️", color: "#4A7C8E",
     morning: [
       "07:30 הלשטאט (30 דק' מ-Gmunden) – סיבוב בעיירה לפני העומס",
+      "07:30 הלשטאט (30 דק' מ-Gmunden) – סיבוב בעיירה לפני העומס",
       "09:00 גוסאו (15 דק' מהלשטאט) – הליכה לאגם, קרחון Dachstein משתקף במים",
       "11:00 נקיק Salzachöfen – חצוב לעומק 90 מ', דום טבעי מסלעים, 3 יורו כניסה"
     ],
@@ -61,10 +62,9 @@ const days = [
   },
   {
     day: 3, date: "24.5", weekday: "שבת",
-    theme: "🎂 יום הולדת! גוסאו + Hohenwerfen + Zell am See", emoji: "🎂", color: "#8E5B7D",
+    theme: "🎂 יום הולדת! Hohenwerfen + Zell am See", emoji: "🎂", color: "#8E5B7D",
     morning: [
-      "08:30 אגם Gosausee (15 דק' מאבנטאו) – הליכה לאורך הגדה הימנית, קרחון Dachstein משתקף במים, נוף מרהיב",
-      "10:30 טירת Hohenwerfen (40 דק' מגוסאו) – טירה מהמאה ה-11 על צוק מרהיב, סיור מודרך, תצפית על העמק",
+      "09:30 טירת Hohenwerfen (20 דק' מאבנטאו) – טירה מהמאה ה-11 על צוק מרהיב, סיור מודרך, תצפית על העמק",
       "12:15 מופע הבזים – חובה לאוהבי בעלי חיים! 🦅",
       "13:30 נקיק זיגמונד-טון (קפרון) – כשעה הליכה בנקיק הטורקיז"
     ],
@@ -77,14 +77,13 @@ const days = [
       "לינה: ALPIN – Das Sporthotel"
     ],
     hotel: "ALPIN – Das Sporthotel | SUMMERCARD כלולה 🎿", gf: "Kupferkanne, Zell am See",
-    distance: "אבנטאו←Gosausee: 15 ק\"מ | ←Hohenwerfen: 40 ק\"מ | ←נקיק קפרון: 30 ק\"מ | ←Zell am See: 15 ק\"מ",
+    distance: "אבנטאו←Hohenwerfen: 20 ק\"מ | ←נקיק קפרון: 30 ק\"מ | ←Zell am See: 15 ק\"מ",
     tip: "מופע הבזים ב-11:15 – זמן מושלם! | SUMMERCARD מהמלון כולל רכבל חינם!",
     gfPlaces: [
       { label: "☕ Kupferkanne Zell am See", waze: "https://waze.com/ul?ll=47.3244,12.7940&navigate=yes" },
       { label: "🌿 Restaurant Steinerwirt, Zell am See", waze: "https://waze.com/ul?ll=47.3260,12.7950&navigate=yes" },
     ],
     stops: [
-      { label: "🏔️ אגם Gosausee", waze: "https://waze.com/ul?ll=47.5358,13.5281&navigate=yes" },
       { label: "🏰 טירת Hohenwerfen", waze: "https://waze.com/ul?ll=47.4618,13.1872&navigate=yes" },
       { label: "💧 נקיק זיגמונד-טון", waze: "https://waze.com/ul?ll=47.3747,13.1253&navigate=yes" },
       { label: "🏔️ Schmittenhöhe (רכבל)", waze: "https://waze.com/ul?ll=47.3244,12.7931&navigate=yes" },
@@ -130,7 +129,7 @@ const days = [
     ],
     afternoon: [
       "12:00 מעבר Gerlos Pass – תצפיות פנורמיות ועצירה ב-Gerlos Stausee (מים טורקיז)",
-      "14:30 Rattenberg – העיר הקטנה באוסטריה (400 מ' אורך!): רחובות מהמאה ה-13, חנויות זכוכית מפורסמות עולמיות – העיר הקטנה באוסטריה (400 מ' אורך!), חנויות זכוכית, רחובות מהמאה ה-13"
+      "14:30 Rattenberg – העיר הקטנה באוסטריה (400 מ' אורך!): רחובות מהמאה ה-13, חנויות זכוכית מפורסמות – Hubert Neuerer מומלצת"
     ],
     evening: [
       "17:00 צ'ק-אין + סיור קצר בעיר",
@@ -160,9 +159,7 @@ const days = [
     ],
     afternoon: [
       "14:00 Durlaßboden Speichersee – סכר ראשון עם מים טורקיז מרהיבים בדרך",
-      "15:00 Schlegeis Stausee – סכר שני עם נוף על קרחון, נסיעה דרמטית בין ההרים",
-      "Karwendelbahn – רכבל לגובה 1,780 מ', תצפית מדהימה על האגם וההרים",
-      "חלופה: הליכה לאורך שפת האגם לכיוון Achenkirch, או קיאק/סירת משוטים 🚣"
+      "14:30 Talbach Wasserfall – מפל מרהיב ממש בתוך עמק Zillertal, דקות מהמלון, הליכה קלה וציורית"
     ],
     evening: [
       "שקיעה מהמרפסת",
@@ -179,7 +176,7 @@ const days = [
     stops: [
       { label: "🏔️ Zillertaler Höhenstraße", waze: "https://waze.com/ul?ll=47.2500,11.8500&navigate=yes" },
       { label: "🏘️ Mayrhofen", waze: "https://waze.com/ul?ll=47.1667,11.8667&navigate=yes" },
-      { label: "🚡 Karwendelbahn (Pertisau)", waze: "https://waze.com/ul?ll=47.4333,11.7167&navigate=yes" },
+      { label: "💧 Talbach Wasserfall", waze: "https://waze.com/ul?ll=47.1833,11.8833&navigate=yes" },
       { label: "🏨 PACHMAIR 1453, Uderns", waze: "https://waze.com/ul?q=PACHMAIR+1453+Uderns&navigate=yes" },
     ]
   },
@@ -188,7 +185,7 @@ const days = [
     theme: "Hall in Tirol + אינסברוק", emoji: "🏰", color: "#7D4A5B",
     morning: [
       "09:00 Hall in Tirol (20 דק' מהמלון) – עיר עתיקה אותנטית שרוב התיירים מחמיצים: מגדל המטבע, רחובות צבעוניים, שוק קטן",
-      "11:00 אינסברוק – הגג הזהב Goldenes Dachl, ארמון Hofburg, Maria-Theresien-Straße"
+      "11:00 Swarovski Crystal Worlds, Wattens (15 דק') – מערות קריסטל, אמנות ויזואלית מרהיבה. כ-21 יורו לאדם"
     ],
     afternoon: [
       "13:00 Swarovski Crystal Worlds, Wattens (15 דק' מאינסברוק) – מערות קריסטל, אמנות ויזואלית מרהיבה, גן קסום. כ-21 יורו לאדם",
