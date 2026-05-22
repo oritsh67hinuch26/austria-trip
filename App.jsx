@@ -4,15 +4,14 @@ const days = [
   {
     day: 1, date: "22.5", weekday: "חמישי",
     theme: "וינה ← Gmunden", emoji: "✈️", color: "#5B8E7D",
-    morning: [
+    schedule: [
       "18:00 נחיתה וינה + קבלת רכב (One Way – החזרה במינכן 31/05)",
-      "נסיעה ל-Gmunden (~2.5 שעות)"
-    ],
-    afternoon: [
+      "נסיעה ל-Gmunden (~2.5 שעות)",
       "הגעה ~20:30 – Gmunden על אגם Traunsee",
-      "טיול ערב על שפת האגם"
+      "טיול ערב על שפת האגם",
+      "ארוחת ערב עם נוף לאגם",
+      "לינה: Landhotel Grünberg am See, Gmunden"
     ],
-    evening: ["ארוחת ערב עם נוף לאגם", "לינה: Landhotel Grünberg am See, Gmunden"],
     hotel: "Landhotel Grünberg am See – Gmunden, אגם Traunsee", gf: "מסעדת המלון",
     distance: "מינכן שדה תעופה←St. Wolfgang: ~130 ק\"מ | ~120 דק' | ←Mondsee: 20 ק\"מ",
     tip: "🚗 בדלפק ההשכרה: בקשו כרטיס/צ'יפ טעינה (Charging card) | 🏷️ לרכוש Vignette (מדבקת כבישים) באוסטריה – כבר בדרך מהשדה | Gmunden – עיירה קסומה על אגם Traunsee עם טירה על האי!",
@@ -31,22 +30,17 @@ const days = [
   {
     day: 2, date: "23.5", weekday: "שישי",
     theme: "הלשטאט + גוסאו + נקיק Salzachöfen", emoji: "🏔️", color: "#4A7C8E",
-    morning: [
-      "07:30 הלשטאט (30 דק' מ-Gmunden) – סיבוב בעיירה לפני העומס",
+    schedule: [
       "07:30 הלשטאט (30 דק' מ-Gmunden) – סיבוב בעיירה לפני העומס",
       "09:00 גוסאו (15 דק' מהלשטאט) – הליכה לאגם, קרחון Dachstein משתקף במים",
-      "11:00 נקיק Salzachöfen – חצוב לעומק 90 מ', דום טבעי מסלעים, 3 יורו כניסה"
-    ],
-    afternoon: [
-      "13:30 Golling – ארוחת צהריים + מפל גולינג (75 מ' גובה, הליכה קלה 20 דק', כניסה חינם!)"
-    ],
-    evening: [
-      "15:30 נסיעה לאבנטאו (20 דק')",
-      "ארוחת ערב שקטה",
+      "11:00 נקיק Salzachöfen – חצוב לעומק 90 מ', דום טבעי מסלעים, 3 יורו כניסה",
+      "13:30 Golling – ארוחת צהריים + מפל גולינג (75 מ' גובה, הליכה קלה 20 דק', כניסה חינם!)",
+      "15:30 Bad Gastein (40 דק' מגולינג) – עיירה אלפינית ייחודית עם מפל עוצמתי שעובר בלב העיר! רחובות ציוריים, אווירה מיוחדת, כשעה שיטוט",
+      "17:00 נסיעה לאבנטאו (30 דק') + ארוחת ערב",
       "לינה: Frauenzimmer by Townhouse, אבנטאו"
     ],
     hotel: "Frauenzimmer by Townhouse – אבנטאו", gf: "Bräugasthof, Golling",
-    distance: "Gmunden←הלשטאט: 30 דק' | ←גוסאו: 15 דק' | ←Salzachöfen: 40 דק' | ←Golling: 10 דק' | ←אבנטאו: 20 דק'",
+    distance: "Gmunden←הלשטאט: 30 דק' | ←גוסאו: 15 דק' | ←Salzachöfen: 40 דק' | ←Golling: 10 דק' | ←Bad Gastein: 40 דק' | ←אבנטאו: 30 דק'",
     tip: "💡 Bad Gastein – עיירה אלפינית עם מפל בלב העיירה, 40 דק' מאבנטאו, שווה אם יש זמן פנוי",
     gfPlaces: [
       { label: "🌿 Bräugasthof Abtenau", waze: "https://waze.com/ul?ll=47.5688,13.3453&navigate=yes" },
@@ -57,22 +51,19 @@ const days = [
       { label: "🏔️ גוסאו", waze: "https://waze.com/ul?ll=47.5358,13.5281&navigate=yes" },
       { label: "🪨 נקיק Salzachöfen", waze: "https://waze.com/ul?ll=47.5897,13.1714&navigate=yes" },
       { label: "🍽️ Golling + מפל", waze: "https://waze.com/ul?ll=47.5964,13.1650&navigate=yes" },
+      { label: "💧 Bad Gastein – מפל בלב העיר", waze: "https://waze.com/ul?ll=47.1167,13.1333&navigate=yes" },
       { label: "🏨 Abtenau (מלון)", waze: "https://waze.com/ul?ll=47.5688,13.3453&navigate=yes" },
     ]
   },
   {
     day: 3, date: "24.5", weekday: "שבת",
     theme: "🎂 יום הולדת! Hohenwerfen + Zell am See", emoji: "🎂", color: "#8E5B7D",
-    morning: [
+    schedule: [
       "09:30 טירת Hohenwerfen (20 דק' מאבנטאו) – טירה מהמאה ה-11 על צוק מרהיב, סיור מודרך, תצפית על העמק",
       "12:15 מופע הבזים – חובה לאוהבי בעלי חיים! 🦅",
-      "13:30 נקיק זיגמונד-טון (קפרון) – כשעה הליכה בנקיק הטורקיז"
-    ],
-    afternoon: [
+      "13:30 נקיק זיגמונד-טון (קפרון) – כשעה הליכה בנקיק הטורקיז",
       "צ'ק-אין ל-ALPIN Das Sporthotel – SUMMERCARD כלולה!",
-      "15:30 Schmittenhöhe – רכבל לגובה 1,965 מ', תצפית פנורמית על 30 פסגות והאגם"
-    ],
-    evening: [
+      "15:30 Schmittenhöhe – רכבל לגובה 1,965 מ', תצפית פנורמית על 30 פסגות והאגם",
       "ארוחת ערב חגיגית ליום הולדת 🎉",
       "לינה: ALPIN – Das Sporthotel"
     ],
@@ -93,16 +84,12 @@ const days = [
   {
     day: 4, date: "25.5", weekday: "ראשון",
     theme: "יום הגבהים הגדול", emoji: "⛰️", color: "#6B7E4A",
-    morning: [
+    schedule: [
       "07:30 סכר Kaprun – חובה: בגדי חורף + כפפות + כובע! אוטובוס ← רכבל פתוח ← אוטובוס, כ-4 שעות כולל נסיעות",
-      "תצפית עליונה על הסכר – מחייב!"
-    ],
-    afternoon: [
+      "תצפית עליונה על הסכר – מחייב!",
       "12:00 Grossglockner High Alpine Road – הכביש הפנורמי היפה ביותר באלפים. כניסה בתשלום: ~40 יורו לרכב, לשלם בכניסה",
       "עצירת חובה: Edelweissspitze – הנקודה הגבוהה ביותר אליה ניתן להגיע ברכב",
-      "Franz-Josef-Höhe – צפייה בקרחון Pasterze ומרמיטות 🦔"
-    ],
-    evening: [
+      "Franz-Josef-Höhe – צפייה בקרחון Pasterze ומרמיטות 🦔",
       "17:30 חזרה למלון + ארוחת ערב שקטה",
       "לינה: ALPIN – Das Sporthotel"
     ],
@@ -124,14 +111,10 @@ const days = [
   {
     day: 5, date: "26.5", weekday: "שני",
     theme: "Krimml → Rattenberg", emoji: "💧", color: "#4A6B8E",
-    morning: [
-      "08:30 מפלי Krimml – הגבוהים באירופה (380 מ'!), 3 רמות מרהיבות, 2.5-3 שעות הליכה, ~6-8 יורו כניסה"
-    ],
-    afternoon: [
+    schedule: [
+      "08:30 מפלי Krimml – הגבוהים באירופה (380 מ'!), 3 רמות מרהיבות, 2.5-3 שעות הליכה, ~6-8 יורו כניסה",
       "12:00 מעבר Gerlos Pass – תצפיות פנורמיות ועצירה ב-Gerlos Stausee (מים טורקיז)",
-      "14:30 Rattenberg – העיר הקטנה באוסטריה (400 מ' אורך!): רחובות מהמאה ה-13, חנויות זכוכית מפורסמות – Hubert Neuerer מומלצת"
-    ],
-    evening: [
+      "14:30 Rattenberg – העיר הקטנה באוסטריה (400 מ' אורך!): רחובות מהמאה ה-13, חנויות זכוכית מפורסמות – Hubert Neuerer מומלצת",
       "17:00 צ'ק-אין + סיור קצר בעיר",
       "ארוחת ערב על נהר Inn | לינה: Boutiquehotel Rattenberg (בניין גותי מ-1500, דירוג 9.6)"
     ],
@@ -153,15 +136,10 @@ const days = [
   {
     day: 6, date: "27.5", weekday: "שלישי",
     theme: "Zillertal – כביש פנורמי + Mayrhofen + מפל", emoji: "🏔️", color: "#8E7D4A",
-    morning: [
+    schedule: [
       "09:00 Zillertaler Höhenstraße – לעלות מ-Kaltenbach ולרדת לכיוון Hippach | עצירות חובה: Melchboden (2,020 מ') – תצפית 360° מדהימה | ארץ המרמיטות (Murmelland) – מרמיטות אלפיניות מקרוב 🦔 | שביל Hubertus Wildlife Trail – קצר וקל, 12 תחנות אינטראקטיביות",
-      "12:00 Mayrhofen – עיירה אלפינית ציורית, ארוחת צהריים + שיטוט קצר"
-    ],
-    afternoon: [
-      "14:00 Durlaßboden Speichersee – סכר ראשון עם מים טורקיז מרהיבים בדרך",
-      "14:30 Talbach Wasserfall – מפל מרהיב ממש בתוך עמק Zillertal, דקות מהמלון, הליכה קלה וציורית"
-    ],
-    evening: [
+      "12:00 Mayrhofen – עיירה אלפינית ציורית, ארוחת צהריים + שיטוט קצר",
+      "14:30 Talbach Wasserfall – מפל מרהיב ממש בתוך עמק Zillertal, דקות מהמלון, הליכה קלה וציורית",
       "שקיעה מהמרפסת",
       "ארוחת ערב + לינה: PACHMAIR 1453 Apart Resort, Uderns, Zillertal"
     ],
@@ -183,15 +161,10 @@ const days = [
   {
     day: 7, date: "28.5", weekday: "רביעי",
     theme: "Hall in Tirol + אינסברוק", emoji: "🏰", color: "#7D4A5B",
-    morning: [
+    schedule: [
       "09:00 Hall in Tirol (20 דק' מהמלון) – עיר עתיקה אותנטית שרוב התיירים מחמיצים: מגדל המטבע, רחובות צבעוניים, שוק קטן",
-      "11:00 Swarovski Crystal Worlds, Wattens (15 דק') – מערות קריסטל, אמנות ויזואלית מרהיבה. כ-21 יורו לאדם"
-    ],
-    afternoon: [
-      "13:00 Swarovski Crystal Worlds, Wattens (15 דק' מאינסברוק) – מערות קריסטל, אמנות ויזואלית מרהיבה, גן קסום. כ-21 יורו לאדם",
-      "15:30 Nordkettenbahn – רכבל ממרכז העיר ל-2,300 מ'! תצפית 360° על אינסברוק וההרים"
-    ],
-    evening: [
+      "12:00 Swarovski Crystal Worlds, Wattens (10 דק' מ-Hall) – מערות קריסטל, אמנות ויזואלית מרהיבה, גן קסום. כ-21 יורו לאדם, כשעה-שעתיים",
+      "15:30 Nordkettenbahn – רכבל ממרכז העיר ל-2,300 מ'! תצפית 360° על אינסברוק וההרים",
       "18:00 ערב חופשי – רחובות העיר העתיקה, גשר Innbrücke, מסעדה לבחירה",
       "לינה: Altstadthotel Weisses Kreuz"
     ],
@@ -213,14 +186,10 @@ const days = [
   {
     day: 8, date: "29.5", weekday: "חמישי",
     theme: "יום נסיעות ארוך → פוסן", emoji: "🌉", color: "#5B4A8E",
-    morning: [
+    schedule: [
       "09:30 נקיק Leutaschklamm (30 דק' מאינסברוק) – הליכה מעגלית כשעה וחצי על גשרי פלדה מעל נהר גועש",
-      "11:30 Mittenwald – עיירת הציורים: כל הבתים מצוירים (Lüftlmalerei), מוזיאון הכינורות המפורסם (עיירת יצרני כינורות מהמאה ה-17!), ארוחת צהריים בעיר העתיקה"
-    ],
-    afternoon: [
-      "14:00 Highline 179 ליד Reutte – אחד מגשרי החבלים הארוכים בעולם, מחבר שתי מצודות עתיקות, עלייה במיני-פוניקולר"
-    ],
-    evening: [
+      "11:30 Mittenwald – עיירת הציורים: כל הבתים מצוירים (Lüftlmalerei), מוזיאון הכינורות המפורסם (עיירת יצרני כינורות מהמאה ה-17!), ארוחת צהריים בעיר העתיקה",
+      "14:00 Highline 179 ליד Reutte – אחד מגשרי החבלים הארוכים בעולם, מחבר שתי מצודות עתיקות, עלייה במיני-פוניקולר",
       "17:00 פוסן – צ'ק-אין + שיטוט בעיר העתיקה",
       "ארוחת ערב בפוסן | לינה: Hotel Sonne – לב העיר"
     ],
@@ -242,16 +211,12 @@ const days = [
   {
     day: 9, date: "30.5", weekday: "שישי",
     theme: "טירת Neuschwanstein → Schwangau", emoji: "🏯", color: "#4A8E6B",
-    morning: [
+    schedule: [
       "08:30 טירת Neuschwanstein – עלייה בשאטל/כרכרה, סיור בטירה (הוזמן מראש לשעה 10:00)",
-      "תצפית מגשר Marienbrücke – חובה מוחלטת!"
-    ],
-    afternoon: [
+      "תצפית מגשר Marienbrücke – חובה מוחלטת!",
       "12:30 אגם Alpsee – הליכה מישורית נעימה על שפת המים",
       "14:30 כנסיית Wies (UNESCO, 25 דק' מהאגם) – 'הקפלה הסיסטינית של בוואריה': תקרה מצוירת מרהיבה, יצירת בארוק מהמאה ה-18. הכנסייה קטנה – לבוא מוקדם!",
-      "16:30 צ'ק-אין ל-Hotel Müller, Schwangau"
-    ],
-    evening: [
+      "16:30 צ'ק-אין ל-Hotel Müller, Schwangau",
       "שיטוט בין הטירות המוארות בערב – קסום ללא עומס תיירים ✨",
       "ארוחת ערב בווארית אותנטית במלון"
     ],
@@ -272,16 +237,14 @@ const days = [
   {
     day: 10, date: "31.5", weekday: "שבת",
     theme: "Linderhof + Oberammergau ✈ חזרה", emoji: "🛫", color: "#8E6B4A",
-    morning: [
+    schedule: [
       "08:00 אגם Plansee – נסיעה נופית ממש על קו המים",
       "09:30 ארמון Linderhof – הגנים המטורפים של לודוויג, מזרקה פועלת כל שעה עגולה",
-      "10:30 מנזר Ettal – גבינות וליקרים מקומיים"
-    ],
-    afternoon: [
+      "10:30 מנזר Ettal – גבינות וליקרים מקומיים",
       "11:00 Oberammergau – כפר שכל בית מצויר מהרצפה לגג: ציורי דת ונופים מרהיבים, חנויות גילוף עץ מפורסמות (מסורת של מאות שנים!), קפה וצהריים בכיכר",
-      "15:00 יציאה לשדה + עצירה ב-Starnberg (על הדרך) – 10 דק' על הטיילת של האגם"
-    ],
-    evening: [
+      "13:00 מנזר Andechs (20 דק' מ-Oberammergau) – מנזר בנדיקטיני על גבעה עם נוף מרהיב, בירה מקומית מפורסמת, כנסייה יפהפייה",
+      "14:30 אגם Starnberg (על הדרך לשדה) – 10 דק' על הטיילת",
+      "16:00 נסיעה לשדה מינכן",
       "17:00 שדה תעופה מינכן",
       "20:00 טיסה חזרה 🏠"
     ],
@@ -297,6 +260,7 @@ const days = [
       { label: "👑 ארמון Linderhof", waze: "https://waze.com/ul?ll=47.5714,10.9611&navigate=yes" },
       { label: "⛪ מנזר Ettal", waze: "https://waze.com/ul?ll=47.5736,11.0939&navigate=yes" },
       { label: "🎨 Oberammergau", waze: "https://waze.com/ul?ll=47.5983,11.0669&navigate=yes" },
+      { label: "⛪ מנזר Andechs", waze: "https://waze.com/ul?ll=47.9761,11.1839&navigate=yes" },
       { label: "🌊 אגם Starnberg", waze: "https://waze.com/ul?ll=47.9969,11.3414&navigate=yes" },
       { label: "✈️ שדה תעופה מינכן", waze: "https://waze.com/ul?ll=48.3537,11.7750&navigate=yes" },
       { label: "⚡ IONITY + קפה, Bernau am Chiemsee", waze: "https://waze.com/ul?ll=47.8167,12.3667&navigate=yes" },
@@ -311,9 +275,7 @@ function TripApp() {
   const day = selectedDay !== null ? days[selectedDay] : null;
 
   const tabList = [
-    { key: "morning", label: "🌅 בוקר" },
-    { key: "afternoon", label: "☀️ אחה\"צ" },
-    { key: "evening", label: "🌙 ערב" },
+    { key: "schedule", label: "📅 לוז" },
     { key: "info", label: "ℹ️ פרטים" },
     { key: "gf", label: "🌾 GF" },
     { key: "nav", label: "🚗 ניווט" },
@@ -360,8 +322,8 @@ function TripApp() {
         }, t.label))
       ),
       React.createElement("div", { style: { padding: "16px 20px" } },
-        (tab === "morning" || tab === "afternoon" || tab === "evening") && React.createElement("ul", { style: { margin: 0, padding: 0, listStyle: "none" } },
-          (tab === "morning" ? day.morning : tab === "afternoon" ? day.afternoon : day.evening).map((item, i) =>
+        tab === "schedule" && React.createElement("ul", { style: { margin: 0, padding: 0, listStyle: "none" } },
+          day.schedule.map((item, i) =>
             React.createElement("li", { key: i, style: { padding: "8px 0", borderBottom: "1px solid #eee", fontSize: 18, lineHeight: 1.6, display: "flex", alignItems: "flex-start", gap: 10 } },
               React.createElement("span", { style: { color: day.color, flexShrink: 0, marginTop: 3, fontSize: 10 } }, "◆"),
               React.createElement("span", { style: { color: "#222" } }, item)
