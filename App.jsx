@@ -12,19 +12,15 @@ const days = [
       "ארוחת ערב עם נוף לאגם",
       "לינה: Landhotel Grünberg am See, Gmunden"
     ],
-    hotel: "Landhotel Grünberg am See – Gmunden, אגם Traunsee", gf: "מסעדת המלון",
-    distance: "מינכן שדה תעופה←St. Wolfgang: ~130 ק\"מ | ~120 דק' | ←Mondsee: 20 ק\"מ",
+    hotel: "Landhotel Grünberg am See – Gmunden, אגם Traunsee", gf: "מסעדת המלון – Landhotel Grünberg",
+    distance: "וינה שדה תעופה←Gmunden: ~230 ק\"מ | ~2.5 שעות",
     tip: "🚗 בדלפק ההשכרה: בקשו כרטיס/צ'יפ טעינה (Charging card) | 🏷️ לרכוש Vignette (מדבקת כבישים) באוסטריה – כבר בדרך מהשדה | Gmunden – עיירה קסומה על אגם Traunsee עם טירה על האי!",
     gfPlaces: [
-      { label: "🌿 Triangel Restaurant", waze: "https://waze.com/ul?ll=47.7998,13.0455&navigate=yes" },
-      { label: "🥂 Carpe Diem Finest Fingerfood", waze: "https://waze.com/ul?ll=47.8008,13.0432&navigate=yes" },
+      { label: "🌿 Landhotel Grünberg (המלון עצמו)", waze: "https://waze.com/ul?q=Landhotel+Grünberg+am+See+Gmunden&navigate=yes" },
     ],
     stops: [
-      { label: "✈️ שדה תעופה מינכן", waze: "https://waze.com/ul?ll=48.3537,11.7750&navigate=yes" },
-      { label: "⚡ IONITY + קפה, Bernau am Chiemsee", waze: "https://waze.com/ul?ll=47.8167,12.3667&navigate=yes" },
-      { label: "🌊 אגם Chiemsee – עצירה", waze: "https://waze.com/ul?ll=47.8553,12.4333&navigate=yes" },
-      { label: "🏨 Strandhotel Margaretha, St. Wolfgang", waze: "https://waze.com/ul?ll=47.7378,13.4458&navigate=yes" },
-      { label: "⛪ Mondsee – כנסיית Sound of Music", waze: "https://waze.com/ul?ll=47.8553,13.3497&navigate=yes" },
+      { label: "✈️ שדה תעופה וינה (VIE)", waze: "https://waze.com/ul?ll=48.1102,16.5697&navigate=yes" },
+      { label: "🏨 Landhotel Grünberg am See, Gmunden", waze: "https://waze.com/ul?q=Landhotel+Grünberg+am+See+Gmunden&navigate=yes" },
     ]
   },
   {
@@ -41,7 +37,7 @@ const days = [
     ],
     hotel: "Frauenzimmer by Townhouse – אבנטאו", gf: "Bräugasthof, Golling",
     distance: "Gmunden←הלשטאט: 30 דק' | ←גוסאו: 15 דק' | ←Salzachöfen: 40 דק' | ←Golling: 10 דק' | ←Bad Gastein: 40 דק' | ←אבנטאו: 30 דק'",
-    tip: "💡 Bad Gastein – עיירה אלפינית עם מפל בלב העיירה, 40 דק' מאבנטאו, שווה אם יש זמן פנוי",
+    tip: "Bad Gastein – עיירה אלפינית ייחודית עם מפל בלב העיר, ~40 דק' מגולינג | 💡 כרטיסים לנקיק – 3 יורו בכניסה",
     gfPlaces: [
       { label: "🌿 Bräugasthof Abtenau", waze: "https://waze.com/ul?ll=47.5688,13.3453&navigate=yes" },
       { label: "🍽️ Gasthof Zur Post, Golling", waze: "https://waze.com/ul?ll=47.5964,13.1650&navigate=yes" },
@@ -52,7 +48,7 @@ const days = [
       { label: "🪨 נקיק Salzachöfen", waze: "https://waze.com/ul?ll=47.5897,13.1714&navigate=yes" },
       { label: "🍽️ Golling + מפל", waze: "https://waze.com/ul?ll=47.5964,13.1650&navigate=yes" },
       { label: "💧 Bad Gastein – מפל בלב העיר", waze: "https://waze.com/ul?ll=47.1167,13.1333&navigate=yes" },
-      { label: "🏨 Abtenau (מלון)", waze: "https://waze.com/ul?ll=47.5688,13.3453&navigate=yes" },
+      { label: "🏨 Frauenzimmer by Townhouse, אבנטאו", waze: "https://waze.com/ul?q=Frauenzimmer+Townhouse+Abtenau&navigate=yes" },
     ]
   },
   {
@@ -170,7 +166,7 @@ const days = [
     ],
     hotel: "Altstadthotel Weisses Kreuz – אינסברוק", gf: "Lichtblick (קומה 7), עוגות – Café Munding",
     distance: "Uderns←Hall in Tirol: 45 ק\"מ | ←Wattens (Swarovski): 10 ק\"מ | ←אינסברוק: 15 ק\"מ",
-    tip: "הרכבל Nordkette – חובה ביום בהיר!",
+    tip: "Swarovski – להזמין מראש ב-kristallwelten.swarovski.com | Nordkette – חובה ביום בהיר! | Hall in Tirol – בדקי שעות פתיחה",
     gfPlaces: [
       { label: "🌿 Lichtblick Restaurant (קומה 7)", waze: "https://waze.com/ul?ll=47.2682,11.3928&navigate=yes" },
       { label: "☕ Café Munding (עוגות GF)", waze: "https://waze.com/ul?ll=47.2675,11.3933&navigate=yes" },
@@ -178,6 +174,7 @@ const days = [
     ],
     stops: [
       { label: "🏘️ Hall in Tirol", waze: "https://waze.com/ul?ll=47.2833,11.5069&navigate=yes" },
+      { label: "💎 Swarovski Crystal Worlds, Wattens", waze: "https://waze.com/ul?ll=47.2917,11.6000&navigate=yes" },
       { label: "✨ הגג הזהב – אינסברוק", waze: "https://waze.com/ul?ll=47.2682,11.3928&navigate=yes" },
       { label: "🚡 Nordkettenbahn (רכבל)", waze: "https://waze.com/ul?ll=47.2728,11.3958&navigate=yes" },
       { label: "🏨 Altstadthotel Weisses Kreuz", waze: "https://waze.com/ul?q=Altstadthotel+Weisses+Kreuz+Innsbruck&navigate=yes" },
@@ -263,8 +260,6 @@ const days = [
       { label: "⛪ מנזר Andechs", waze: "https://waze.com/ul?ll=47.9761,11.1839&navigate=yes" },
       { label: "🌊 אגם Starnberg", waze: "https://waze.com/ul?ll=47.9969,11.3414&navigate=yes" },
       { label: "✈️ שדה תעופה מינכן", waze: "https://waze.com/ul?ll=48.3537,11.7750&navigate=yes" },
-      { label: "⚡ IONITY + קפה, Bernau am Chiemsee", waze: "https://waze.com/ul?ll=47.8167,12.3667&navigate=yes" },
-      { label: "🌊 אגם Chiemsee – עצירה", waze: "https://waze.com/ul?ll=47.8553,12.4333&navigate=yes" },
     ]
   }
 ];
